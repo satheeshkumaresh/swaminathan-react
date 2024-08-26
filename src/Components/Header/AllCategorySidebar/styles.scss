@@ -1,0 +1,256 @@
+.header-sidebar {
+    span.menu-btn {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.category-slider-section {
+    .signin-header {
+        background-color: #641233;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 18px 15px 18px 36px;
+        align-items: center;
+
+        &.section {
+            padding: 12px 15px 12px 15px;
+        }
+
+        .box-section-title {
+            width: 100%;
+
+            &.main-title {
+                text-align: start;
+            }
+        }
+
+
+        .signin-title {
+            flex-grow: 1;
+            color: #FFFFFF;
+            line-height: 0.8em !important;
+            text-transform: uppercase;
+            font-weight: 600;
+
+            .user-title {
+                display: inline-block;
+                max-width: 200px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            a {
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+        }
+
+        .signin-closeicon {
+            width: 14px;
+            height: 14px;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    /* scroll bar */
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #EBEBEB;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #2B2525;
+        border-radius: 10px;
+        opacity: 0.58;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #2B2525;
+    }
+
+
+    .menu-list-sidebar {
+        max-height: calc(100vh - 20px);
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-bottom: 30px;
+    }
+
+
+
+    .MuiList-root {
+        .main-category {
+            .menu-text {
+                color: #3E484A;
+                text-decoration: none;
+                padding: 10px 20px 10px 20px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #EBEBEB;
+
+                svg {
+                    font-size: 20px;
+                }
+
+                &.opened {
+                    background-color: #F8F8F8;
+                }
+
+            }
+
+            .auth_block {
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 5px;
+            }
+
+            .category-menu-list-section {
+                .subcategories-section {
+                    .subcategory-list {
+                        .subcategory-main-title {
+                            &.opened {
+                                background-color: #F8F8F8;
+                            }
+
+                            .main-title-block {
+                                flex-direction: row;
+                                align-items: center;
+                                padding-right: 20px;
+                                justify-content: space-between;
+                                border-bottom: 1px solid #EBEBEB;
+                            }
+
+                            .category-sub-title-section {
+                                border-bottom: 1px solid #EBEBEB;
+                            }
+
+                            .main-title {
+                                padding-bottom: 6px;
+                                margin: 6px 0px 6px 20px;
+                                color: #3E484A;
+                                text-decoration: none;
+                                display: flex;
+                                padding-right: 20px;
+                                justify-content: space-between;
+                                width: fit-content;
+                            }
+
+                            svg {
+                                font-size: 20px;
+                                cursor: pointer;
+                            }
+
+                            .category-sub-title-section {
+                                .main-title {
+                                    padding: 0px 20px 0px 20px;
+                                    border: none;
+                                    padding-bottom: 6px;
+
+                                }
+                            }
+
+                            &:last-child {
+                                .main-title {
+                                    border-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .menu-text {
+                        padding: 6px 20px 6px 40px;
+                    }
+                }
+
+
+            }
+        }
+
+        h4 {
+            padding: 10px 15px;
+            padding-left: 40px;
+            color: #232F3E;
+            font-weight: 600;
+        }
+
+        .list-item {
+            color: #3E484A;
+            text-decoration: none;
+            padding: 6px 20px 6px 40px;
+            display: block;
+        }
+
+        .MuiListItem-root {
+            .MuiListItemButton-root {
+
+                .MuiListItemText-root {
+                    margin: 0;
+                }
+
+                .MuiTypography-root {
+                    color: #3E484A;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .MuiDrawer-root {
+        .MuiPaper-root {
+            width: 100%;
+
+            .category-slider-section {
+                .signin-header {
+                    padding: 18px 15px 18px 23px;
+                }
+
+                .category-slider-block {
+                    width: 100%;
+                }
+            }
+
+            .MuiList-root {
+                h4 {
+                    padding-left: 25px;
+                }
+            }
+
+            .MuiListItem-root {
+                .MuiListItemButton-root {
+                    padding-left: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .header-sidebar {
+        span.menu-btn {
+            .title {
+                display: none;
+            }
+        }
+    }
+}
+
+.header-menu-drawer {
+    z-index: 9999 !important;
+}

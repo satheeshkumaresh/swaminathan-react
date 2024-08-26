@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="Group_3580" data-name="Group 3580" transform="translate(-2282 -97)">
+    <rect id="Rectangle_2590" data-name="Rectangle 2590" width="36" height="36" transform="translate(2282 97)" fill="none"/>
+    <g id="Smartphone_1_" transform="translate(2261.213 82.201)">
+      <path id="Path_11765" data-name="Path 11765" d="M43.234,22H34.341A2.643,2.643,0,0,0,31.8,24.71V40.887a2.643,2.643,0,0,0,2.541,2.71h8.893a2.643,2.643,0,0,0,2.541-2.71V24.71A2.643,2.643,0,0,0,43.234,22ZM44.5,40.887a1.3,1.3,0,0,1-1.27,1.355H34.341a1.3,1.3,0,0,1-1.27-1.355V24.71a1.3,1.3,0,0,1,1.27-1.355h8.893A1.3,1.3,0,0,1,44.5,24.71Z" fill="#3f494b"/>
+      <path id="Path_11766" data-name="Path 11766" d="M45.828,31.6H36.935a.679.679,0,0,0,0,1.355h8.893a.679.679,0,0,0,0-1.355Z" transform="translate(-2.594 -5.535)" fill="#3f494b"/>
+      <path id="Path_11767" data-name="Path 11767" d="M45.828,58.7H36.935a.679.679,0,0,0,0,1.355h8.893a.679.679,0,0,0,0-1.355Z" transform="translate(-2.594 -21.158)" fill="#3f494b"/>
+      <path id="Path_11768" data-name="Path 11768" d="M44.335,28.155h2.541a.679.679,0,0,0,0-1.355H44.335a.679.679,0,0,0,0,1.355Z" transform="translate(-6.861 -2.767)" fill="#3f494b"/>
+      <ellipse id="Ellipse_180" data-name="Ellipse 180" cx="0.974" cy="1.016" rx="0.974" ry="1.016" transform="translate(37.771 39.532)" fill="#3f494b"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,341 @@
+.checkout_container_section {
+    background-color: #fff;
+
+    .checkout_container {
+        width: 94%;
+        margin: auto;
+        padding: 15px 0px 15px 0px;
+        flex-direction: column !important;
+
+        .checkout_title_signin_section {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 20px;
+            position: relative;
+
+
+            .checkout_title_section {
+                gap: 10px;
+
+                .title {
+                    color: #2B2525;
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+                .subtitle {
+                    color: #2B2525;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+            }
+
+            .checkout_signin_section {
+                .signin-section {
+                    .btn_block {
+                        .useraccount-open-section {
+                            position: absolute;
+                            right: 0;
+                            width: 25%;
+                            box-shadow: 3px 3px 20px #0000001A;
+                            border: 1px solid #EBEBEB;
+                            border-radius: 8px;
+                            background-color: #fff;
+                            z-index: 9;
+                            top: 25px;
+
+                            .logged-in-user-dropdown {
+                                padding: 8px 15px;
+
+                                .form-block {
+                                    .header-section {
+                                        padding: 15px 0;
+                                        flex-direction: row;
+                                        justify-content: space-between;
+
+                                        .header-title-section {
+                                            color: #2B2525;
+                                            font-weight: 600;
+                                            font-size: 20px;
+                                        }
+
+                                        .close-section {
+                                            cursor: pointer;
+                                        }
+                                    }
+
+                                    .input-block {
+                                        margin-bottom: 16px;
+
+                                        .input_label {
+                                            color: #3E484A;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            margin-bottom: 7px;
+
+                                            span {
+                                                color: #7F0E05;
+                                                margin-left: 5px;
+                                            }
+                                        }
+
+                                        .form-address-form {
+                                            display: flex;
+                                            align-items: center;
+                                            flex-direction: row;
+
+                                            .input-text {
+                                                width: 100%;
+
+                                                .MuiTypography-root {
+                                                    margin-bottom: 7px;
+                                                }
+
+                                                .MuiInputBase-root {
+                                                    width: 100%;
+                                                }
+                                            }
+
+                                            .input-icon-section {
+                                                position: relative;
+                                                width: 100%;
+                                                align-items: center;
+                                                display: flex;
+                                                justify-content: center;
+
+                                                .MuiInputBase-root {
+                                                    width: 100%;
+                                                }
+                                            }
+
+
+                                            .icon-section {
+                                                position: absolute;
+                                                right: 5%;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+
+                                    .account-after-checkout {
+                                        color: #898D94;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                    }
+
+                                    .checkout-signin-btn {
+                                        margin-top: 0px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                        align-items: center;
+
+                                        .forgot-password {
+                                            margin-left: 0;
+
+                                            a {
+                                                color: #9B3C0B;
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                text-decoration: none;
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .checkout_container_grid {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            gap: 20px;
+
+            .shipping-payment-section {
+                gap: 15px;
+            }
+
+            .checkouk_grid_section {
+                padding: 0;
+
+                .shipping-address-sign-content {
+                    border: 1px solid #EBEBEB;
+                    border-radius: 8px;
+
+                    .guest-signin-section {
+                        padding: 15px 20px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width:1049px) {
+    .checkout_container_section {
+        .checkout_container {
+            .checkout_container_grid {
+                grid-template-columns: 100%;
+                row-gap: 20px;
+                column-gap: 0px;
+            }
+
+            .checkout_title_signin_section {
+                .checkout_title_section {
+                    .title {
+                        font-size: 20px;
+                    }
+                }
+
+                .checkout_signin_section {
+                    .signin-section {
+                        .btn_block {
+                            .useraccount-open-section {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:639px) {
+    .checkout_container_section {
+        .checkout_container {
+            .checkout_title_signin_section {
+                flex-direction: column !important;
+                gap: 15px;
+                position: initial;
+
+                .checkout_signin_section {
+                    position: relative;
+
+                    .signin-section {
+                        .btn_block {
+                            .useraccount-open-section {
+                                left: 0;
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+
+                .checkout_title_section {
+                    .title {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .checkout_container_grid {
+                .checkouk_grid_section {
+                    .shipping-address-sign-content {
+                        .guest-signin-section {
+                            padding: 12px 15px;
+                        }
+
+                        .shipping-address-block {
+                            padding: 12px 15px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:485px) {
+    .checkout_container_section {
+        .checkout_container {
+            .checkout_title_signin_section {
+                flex-direction: column !important;
+                gap: 15px;
+
+                .checkout_signin_section {
+                    .signin-section {
+                        .btn_block {
+                            .useraccount-open-section {
+                                left: 0;
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+
+                .checkout_title_section {
+                    .title {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1050px) and (max-width:1365px) {
+    .checkout_container_section {
+        .checkout_container {
+            .checkout_container_grid {
+                grid-template-columns: 33% 33% 33%;
+                justify-content: space-between;
+                gap: 12px;
+
+                .checkouk_grid_section {
+                    .shipping-address-sign-content {
+                        .guest-signin-section {
+                            padding: 12px 15px;
+                        }
+
+                        .shipping-address-block {
+                            padding: 12px 15px;
+                        }
+                    }
+                }
+
+                .shipping-payment-section {
+                    .shipping-method-table-section {
+                        padding: 12px 15px;
+
+                    }
+                }
+            }
+
+            .checkout_title_signin_section {
+                .checkout_signin_section {
+                    .signin-section {
+                        .btn_block {
+                            .useraccount-open-section {
+                                width: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:639px) and (max-width:1049px) {
+
+    .payment-method-table-section {
+        .address-section-form.fullwidth.checkbox-section {
+            .update-billing-address-section {
+                .form-block.address-section-form.update-address-section {
+                    width: 50%;
+                }
+
+            }
+        }
+    }
+}

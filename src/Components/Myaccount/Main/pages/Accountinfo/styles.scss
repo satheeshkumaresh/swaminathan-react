@@ -1,0 +1,258 @@
+.account-info-page {
+    .block {
+        gap: 20px;
+        border-radius: 8px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid var(--unnamed-color-ebebeb);
+        padding: 22px 20px;
+
+        .account-info {
+            gap: 12px;
+
+            .information {
+                flex-grow: 1;
+                gap: 14px;
+
+                .input-block {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                    position: relative;
+                    padding-bottom: 6px;
+                    color: #2B2525;
+
+                    .input_label {
+                        span {
+                            color: #7F0E05;
+                            padding-left: 4px;
+                        }
+                    }
+
+                    .input-text {
+                        display: flex;
+
+                        .MuiInputAdornment-root {
+                            .MuiTypography-root {
+                                border-right: 1px solid rgba(0, 0, 0, 0.2);
+                                padding-right: 7px;
+                                color: #B5B3B3;
+                                font-weight: 500;
+                                margin-bottom: 0
+                            }
+                        }
+
+                        .MuiInputBase-root {
+                            input {
+                                padding: 10px ;
+                            }
+
+                            fieldset {
+                                border-radius: 26px !important;
+                                border: 1px solid #EBEBEB !important;
+                            }
+                        }
+                    }
+
+                    .form-select {
+                        .dropdown-btn {
+                            padding: 10.3px;
+                        }
+                    }
+                }
+
+                .Change-email-sec,
+                .Change-password-sec {
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 2px;
+                    color: #2B2525;
+
+                    .MuiCheckbox-root {
+                        color: transparent;
+                        border: 1px solid #898D94;
+                        border-radius: 0;
+                        width: 16px;
+                        height: 16px;
+
+                        &.Mui-checked {
+                            color: #1976d2;
+                        }
+                    }
+
+                    .MuiFormGroup-root {
+                        .MuiFormControlLabel-root {
+                            margin: 0;
+                            gap: 4px;
+                        }
+                    }
+
+                    span {
+                        padding: 0;
+                    }
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+
+            .Change-email-password {
+                gap: 15px;
+                padding-top: 9.5px;
+
+                h4 {
+                    font-weight: bold;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                }
+
+                .input-block {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                    position: relative;
+                    padding-bottom: 6px;
+
+                    .input_label {
+                        span {
+                            color: #7F0E05;
+                            padding-left: 4px;
+                        }
+                    }
+
+                    .input-text {
+                        display: flex;
+
+                        .MuiInputBase-root {
+                            input {
+                                padding: 10px;
+                            }
+
+                            fieldset {
+                                border-radius: 26px !important;
+                                border: 1px solid #EBEBEB !important;
+                            }
+                        }
+                    }
+
+                    .form-select {
+                        .dropdown-btn {
+                            padding: 10.3px;
+                        }
+                    }
+                }
+
+                .PasswordStrength {
+                    flex-direction: row;
+                    padding-top: 6px;
+                    color: #2B2525;
+                }
+
+                .ShowPassword {
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 2px;
+                    color: #2B2525;
+                    padding: 4px 0;
+
+                    .MuiFormGroup-root {
+                        .MuiFormControlLabel-root {
+                            margin: 0;
+                            gap: 4px;
+                        }
+                    }
+
+                    .MuiCheckbox-root {
+                        color: transparent;
+                        border: 1px solid #898D94;
+                        border-radius: 0;
+                        width: 16px;
+                        height: 16px;
+
+                        &.Mui-checked {
+                            color: #1976d2;
+                        }
+                    }
+
+                    span {
+                        padding: 0;
+                    }
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .button-block {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 30px;
+
+        .back {
+            border: 1px solid #232F3E;
+            width: auto;
+            color: #232F3E;
+            width: 160px;
+            font-weight: 600;
+        }
+
+        .save {
+            width: 160px;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .account-info-page {
+        .block {
+            padding: 10px 15px;
+        }
+
+        .button-block {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .account-info-page {
+        .block {
+            padding: 10px 15px;
+
+            .account-info {
+                flex-direction: column;
+
+                .Change-email-password {
+                    width: 100%;
+                }
+            }
+        }
+
+        .button-block {
+            flex-direction: column;
+            gap: 12px;
+            padding-bottom: 15px;
+
+            button {
+                width: 100% !important;
+            }
+
+            .save {
+                order: 1;
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .account-info-page {
+        .block {
+            padding: 10px;
+        }
+    }
+}

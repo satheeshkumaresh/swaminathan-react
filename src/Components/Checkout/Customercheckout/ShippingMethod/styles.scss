@@ -1,0 +1,176 @@
+.shipping-method-table-section {
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    padding: 15px 20px;
+
+    .shipping-method-section {
+        padding-bottom: 15px;
+
+        .shipping-title {
+            color: #9B3C0B;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    .MuiPaper-root {
+        box-shadow: none;
+
+        .MuiTable-root {
+            tbody.MuiTableBody-root {
+                .MuiTableRow-root {
+                    border-bottom: 1px solid #0000001A;
+
+                    &:first-child {
+                        border-top: 1px solid #0000001A;
+                    }
+
+                    &:last-child {
+                        border-bottom: 0;
+
+                        .MuiTableCell-root {
+                            border-bottom: 0;
+                        }
+                    }
+
+                    .MuiTableCell-root {
+                        padding-left: 0;
+
+                        &:nth-child(2) {
+                            width: 33%;
+                        }
+
+                        &:nth-child(3) {
+                            width: 33%;
+
+                        }
+
+                        .checkout-price-box-section {
+                            display: flex;
+                            align-items: center;
+
+                            .MuiFormControl-root {
+                                .MuiFormGroup-root {
+                                    .MuiFormControlLabel-root {
+                                        margin-left: 0;
+                                        margin-right: 5px;
+
+                                        .MuiRadio-root {
+                                            padding: 0;
+                                        }
+
+                                        .MuiButtonBase-root {
+                                            .MuiSvgIcon-root {
+                                                font-size: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .sub-total-desktop {
+                                color: #2B2525;
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .sub-total-desktop {
+                            color: #2B2525;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+   
+
+    .continue_action_block.continue-to-payment {
+        margin-top: 20px;
+
+        button.continue-to-payment-btn {
+            width: 100%;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}
+
+
+
+@media (max-width:767px) {
+    .shipping-method-table-section {
+        .shipping-method-section {
+            .shipping-title {
+                font-size: 16px;
+            }
+        }
+    }
+
+
+}
+
+@media (max-width:899.5px) {
+
+    .shipping-method-table-section {
+        .MuiPaper-root {
+            .MuiTable-root {
+                tbody.MuiTableBody-root {
+                    .MuiTableRow-root {
+                        border-top: 0;
+                        border-bottom: 0;
+
+                        td {
+                            width: auto;
+                            display: table-cell;
+                            padding-top: 8px;
+                            padding-bottom: 8px;
+                            padding-right: 8px;
+                            div{
+                                width: auto;
+                            }
+
+                            &:last-child {
+                                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                            }
+
+                            .checkout-price-box-section {
+                                width: 100%;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:580px) {
+
+    .shipping-address-table-content {
+        .shipping-address-table-list {
+            width: 100%;
+        }
+    }
+
+    .shipping-method-table {
+        .MuiPaper-root {
+            .MuiTable-root {
+                tbody.MuiTableBody-root {
+                    .MuiTableRow-root {
+                        .MuiTableCell-root {
+                            div {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

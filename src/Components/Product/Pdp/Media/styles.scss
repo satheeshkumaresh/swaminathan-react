@@ -1,0 +1,178 @@
+.media {
+    .slider-block {
+        position: relative;
+
+        .react-slider {
+            .react-slider__container {
+                .react-slider__areaZoom {
+                    .react-slider__picture {
+                        height: 470px;
+
+                        img {
+                            object-fit: contain;
+                            padding: 10px;
+                            border-color: transparent;
+                        }
+                        &::after{
+                            display: none;
+                        }
+                    }
+
+                    .react-slider__imgZoom {
+                        background-color: #fff;
+                        width: 470px !important;
+                        height: 470px !important;
+                    }
+                }
+
+                .react-slider__btnPrev {
+                    background-image: url('../../../../Assets/Sliderarrows/BannerLeft.svg');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-position: center;
+                    background-color: unset;
+                    width: 35px;
+                    height: 35px;
+                    left: 17px;
+
+                    &::before {
+                        content: unset;
+                    }
+
+                    &:hover {
+                        background-image: url('../../../../Assets/Sliderarrows/BannerLeftHover.svg');
+                    }
+                }
+
+                .react-slider__btnNext {
+                    background-image: url('../../../../Assets/Sliderarrows/BannerRight.svg');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-position: center;
+                    background-color: unset;
+                    width: 35px;
+                    height: 35px;
+                    right: 17px;
+
+                    &::before {
+                        content: unset;
+                    }
+
+                    &:hover {
+                        background-image: url('../../../../Assets/Sliderarrows/BannerRightHover.svg');
+                    }
+                }
+                .react-slider__description{
+                    display: none;
+                }
+            }
+
+            .react-slider__ul {
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+                border-top: 1px solid #EBEBEB;
+                padding-top: 20px;
+                column-gap: 10px;
+                row-gap: 14px;
+
+                li {
+                    margin: 0px;
+                    border: 2px solid #EBEBEB;
+                    border-radius: 4px;
+                    width: 70px;
+                    height: 70px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        border: 0px;
+                        border-radius: 2px;
+                        object-fit: contain;
+                        width: 60px;
+                        height: 60px;
+                        margin: auto;
+                    }
+                }
+
+                li.active {
+                    border: 2px solid #641233;
+
+                    img {
+                        position: static;
+                    }
+                }
+            }
+        }
+
+        .view_model_popup {
+            position: absolute;
+            top: 517px;
+            right: 0px;
+            border: 1px solid #EBEBEB;
+            box-shadow: 3px 3px 12px rgb(0 0 0 / 8%);
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            padding: 15px;
+            z-index: 9;
+            background-color: #fff;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .media {
+        .slider-block {
+            .react-slider {
+                .react-slider__container {
+                    .react-slider__areaZoom {
+                        .react-slider__lens {
+                            display: none;
+                        }
+
+                        .react-slider__imgZoom {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .view_model_popup {
+                top: 412px;
+                right: 12px;
+                width: 46px;
+                height: 46px;
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .media {
+        .slider-block {
+            .react-slider {
+                .react-slider__container {
+                    .react-slider__areaZoom {
+                        .react-slider__picture {
+                            height: 400px;
+                        }
+                    }
+                }
+                .react-slider__ul {
+                grid-template-columns: auto auto auto auto;
+
+                }
+            }
+            .view_model_popup {
+                top: 343px;
+            }
+        }
+    }
+}

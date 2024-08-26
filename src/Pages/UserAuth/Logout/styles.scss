@@ -1,0 +1,101 @@
+.afterlogout {
+    .container {
+        background: #F2F7F7;
+
+        .row {
+            width: 400px;
+            margin: 5rem auto;
+            text-align: center;
+            background: white;
+            padding: 30px 50px;
+            gap: 18px;
+            margin-bottom: 8rem;
+
+            h4 {
+                color: #3E484A;
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            p {
+                color: #3E484A;
+                font-size: 12px;
+            }
+
+            .button-section {
+                padding-top: 10px;
+
+                button {
+                    background: #232F3E;
+                    width: 100%;
+                    color: white;
+                    padding: 8px;
+                    border-radius: 3px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+@media (min-width:1536px) and (max-width:1920px) {
+    .afterlogout {
+        .container {
+            .row {
+                width: 550px;
+                padding: 40px 80px 50px;
+                gap: 22px;
+                .image-section{
+                    width: 115px;
+                    img{
+                        padding: 20px 0;
+                    }
+                }
+    
+                h4 {
+                    font-size: 28px;
+                }
+    
+                p {
+                    font-size: 16px;
+                }
+    
+                .button-section {
+                    padding-top: 15px;
+    
+                    button {
+                        padding: 13px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:550px) {
+    .afterlogout {
+        background: #F2F7F7;
+        .container {
+            width: 93%;
+            margin: 0 auto;
+            .row{
+               width: 100%;
+               box-sizing: border-box;
+               padding: 30px 20px;
+               margin: 2.5rem 0;
+            }
+        }
+    }
+}
+@media (max-width:480px) {
+    .afterlogout {
+        .container {
+            .row{
+                p{
+                    width: 250px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+

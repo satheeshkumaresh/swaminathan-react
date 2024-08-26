@@ -1,0 +1,158 @@
+.custom-model {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000080;
+    z-index: 99999 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .model-container {
+        background-color: #fff;
+        min-width: 250px;
+        width: 20%;
+        padding: 34px 20px 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .close-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            height: 18px;
+            cursor: pointer;
+
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        .msg-text {
+            color: #3E484A;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        .btn-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1em 0;
+
+            button {
+                width: 48%;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            button.common-outlied-btn.clear-btn {
+                background-color: #F7F7F7;
+                color: #232F3E;
+            }
+        }
+
+    }
+}
+
+.minicart_alert-model {
+    .model-container {
+        width: 350px;
+        padding: 22px 26px 22px 26px;
+
+        .alert-block {
+            text-align: center;
+        }
+    }
+}
+
+@media(min-width:1536px) and (max-width:1920px) {
+    .custom-model {
+        .model-container {
+            width: 25%;
+
+            .close-btn {
+                height: 23px;
+
+                svg {
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+
+            .msg-text {
+                font-size: 16px;
+            }
+
+            .btn-section {
+                button {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:1024px) {
+    .custom-model {
+        .model-container {
+            width: 40%;
+
+            .btn-section {
+                flex-direction: column;
+                gap: 15px;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:767px) {
+    .custom-model {
+        .model-container {
+            width: 50%;
+
+            .btn-section {
+                flex-direction: column;
+                gap: 15px;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:480px) {
+    .custom-model {
+        .model-container {
+            width: 80%;
+            padding: 22px 15px 22px 15px;
+
+            .btn-section {
+                flex-direction: column;
+                gap: 15px;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

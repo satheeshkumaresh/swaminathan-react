@@ -1,0 +1,387 @@
+.header-menu-drawer {
+    .MuiPaper-root.MuiPaper-elevation {
+        overflow: hidden;
+    }
+}
+
+.header-sidebar {
+    span.menu-btn {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.filter-section-navigation {
+    flex-direction: row !important;
+
+
+}
+
+.filter-slider-section-navigation {
+
+    .signin-header {
+        background-color: #641233;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 18px 15px 18px 15px;
+        align-items: center;
+
+        .box-section-title {
+            width: 100%;
+            text-align: start;
+        }
+
+
+        .signin-title {
+            flex-grow: 1;
+            color: #FFFFFF;
+            line-height: 0.8em !important;
+            text-transform: uppercase;
+            font-weight: 600;
+
+            .user-title {
+                display: inline-block;
+                max-width: 200px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            a {
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+        }
+
+        .signin-closeicon {
+            width: 14px;
+            height: 14px;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .content-list-section {
+        margin-right: 10px;
+
+        /* scroll bar */
+        ::-webkit-scrollbar {
+            width: 4px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #EBEBEB;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #2B2525;
+            border-radius: 10px;
+            opacity: 0.58;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2B2525;
+        }
+
+        .navigation-list-section {
+            height: 90vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            margin: 0 0px 0 10px;
+        }
+    }
+
+
+
+    .MuiList-root {
+        .main-category {
+            padding: 10px 10px 20px 10px;
+
+
+
+            .filter-title-text {
+                color: #2B2525;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 10px 0px 0px 0px;
+                margin-bottom: 15px;
+
+            }
+
+
+
+            .filter-category-list {
+                padding: 8px 0;
+                flex-direction: row;
+                align-items: center;
+
+                .MuiFormControlLabel-root {
+                    margin-right: 0;
+                    margin-left: 0;
+
+                    .MuiRadio-root {
+                        &.Mui-checked {
+                            color: transparent;
+                        }
+                    }
+
+
+                    .MuiButtonBase-root {
+                        padding: 0;
+                        margin-right: 15px;
+                        width: 20px;
+                        height: 20px;
+
+                        input {
+                            border: 1px solid #D2D2D2;
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        input[type="radio"]:checked::after {
+                            content: '';
+                            display: block;
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 50%;
+                            background-color: #1B4E9B !important;
+                        }
+
+                        span {
+                            .MuiSvgIcon-root {
+                                width: 20px;
+                                height: 20px;
+
+                                &[data-testid="RadioButtonCheckedIcon"] {
+                                    background-image: url("../../../../Assets/PLP/checkedIcon.svg");
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+
+                                    path {
+                                        visibility: hidden;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .MuiTypography-root {
+                        color: #2B2525;
+                        font-size: 14px;
+                        font-weight: 400;
+
+                    }
+                }
+
+                .category-count {
+                    color: #AEAEAE;
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-left: 10px;
+                }
+            }
+
+            .filter-seemore {
+                padding: 8px 0;
+                color: #898D94;
+                font-size: 14px;
+                font-weight: 400;
+                cursor: pointer;
+            }
+
+            .menu-text {
+                color: #3E484A;
+                text-decoration: none;
+                padding: 10px 0px 10px 0px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #EBEBEB;
+
+            }
+
+            &.btn-section {
+                width: 50%;
+            }
+
+            &.price-slider-section {
+                .horizontal-slider.price-ranger-slider {
+                    padding: 12px 0;
+                    width: 100%;
+                    margin-bottom: 15px;
+
+                    .example-track.example-track-1 {
+                        background: #641233;
+                    }
+
+                    .example-track.example-track-2 {
+                        background: #EBEBEB;
+                    }
+
+                    .example-thumb {
+                        font-size: 0.9em;
+                        text-align: center;
+                        background-color: #641233;
+                        color: transparent;
+                        cursor: pointer;
+                        box-sizing: border-box;
+                    }
+
+                    .example-track {
+                        top: 20px;
+                        height: 4px;
+                    }
+
+                    .example-track {
+                        position: relative;
+                        background: rgb(221, 221, 221);
+                    }
+
+                    .example-thumb {
+                        width: 4px;
+                        height: 20px;
+                        line-height: 20px;
+                        outline: 0;
+                    }
+                }
+
+                .filter-price-text {
+                    color: #2B2525;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin: 15px 0;
+                    display: flex;
+                    align-items: center;
+
+                    .price-value {
+                        color: #641233;
+                        font-size: 14px;
+                        margin-left: 10px;
+                        font-weight: 600;
+
+                    }
+                }
+
+                .sidebar_filter_btn {
+                    button {
+                        padding: 8px 20px !important;
+                        height: auto;
+                        width: max-content;
+                    }
+                }
+            }
+
+
+        }
+
+        .MuiDivider-root {
+            margin-right: 10px;
+        }
+
+        .sidebar_filter_btn {
+            button {
+                padding: 8px 20px !important;
+                height: auto;
+                width: max-content;
+            }
+
+            &.clear-btn-section {
+                margin-top: 15px;
+            }
+        }
+
+        h4 {
+            padding: 10px 15px;
+            padding-left: 40px;
+            color: #232F3E;
+            font-weight: 600;
+        }
+
+        .list-item {
+            color: #3E484A;
+            text-decoration: none;
+            padding: 6px 20px 6px 40px;
+            display: block;
+        }
+
+        .MuiListItem-root {
+            .MuiListItemButton-root {
+
+                .MuiListItemText-root {
+                    margin: 0;
+                }
+
+                .MuiTypography-root {
+                    color: #3E484A;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .MuiDrawer-root {
+        .MuiPaper-root {
+            width: 100%;
+
+            .category-slider-section {
+                .signin-header {
+                    padding: 18px 15px 18px 23px;
+                }
+
+                .category-slider-block {
+                    width: 100%;
+                }
+            }
+
+            .MuiList-root {
+                h4 {
+                    padding-left: 25px;
+                }
+            }
+
+            .MuiListItem-root {
+                .MuiListItemButton-root {
+                    padding-left: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .header-sidebar {
+        span.menu-btn {
+            .title {
+                display: none;
+            }
+        }
+    }
+}
+
+.header-menu-drawer {
+    z-index: 9998 !important;
+
+}
+
+@media (max-width:400px) {
+    .MuiDrawer-root {
+        .MuiPaper-root {
+            .filter-slider-section-navigation {
+                .category-slider-block {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+}

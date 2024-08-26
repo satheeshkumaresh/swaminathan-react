@@ -1,0 +1,737 @@
+.login-page {
+    .container {
+        .row {
+            flex-direction: row;
+
+            .column {
+                width: 50%;
+
+                .form-block {
+                    gap: 16px;
+                    width: 50%;
+                    margin: 0px auto;
+                    padding-top: 65px;
+
+                    h4 {
+                        font-size: 30px;
+                        color: #232F3E;
+                        padding-bottom: 13px;
+                    }
+
+                    .input-block {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 6px;
+                        position: relative;
+                        padding-bottom: 6px;
+
+
+                        .input-text {
+                            display: flex;
+
+                            .MuiInputBase-root {
+                                input {
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .password {
+                        text-align: right;
+                        padding-bottom: 4px;
+
+                        .forgot-password {
+                            text-align: right;
+                            color: #3E484A;
+                            cursor: pointer;
+                            display: contents;
+                        }
+                    }
+
+
+                    .button-section {
+                        gap: 12px;
+                    }
+
+                    .login-button {
+                        background-color: #232F3E;
+                        color: #EEEEEE;
+                        padding: 10px;
+                        border-radius: 3px;
+                        text-transform: capitalize;
+                    }
+
+                    .or {
+                        text-align: center;
+                    }
+
+                    .google-sign-in {
+                        border: 1px solid #232F3E;
+                        border-radius: 3px;
+                        padding: 8px;
+                        text-transform: capitalize;
+
+                        .google-logo {
+                            width: 22px;
+                            height: 22px;
+                            padding-right: 10px;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .sign-in-text {
+                            color: #232F3E;
+                        }
+                    }
+
+                    .sign-up {
+                        display: flex;
+                        justify-content: center;
+
+                        p {
+                            color: #3E484A;
+                        }
+
+                        a {
+                            color: #232F3E;
+                            padding-left: 5px;
+                            font-weight: 700;
+                            cursor: pointer;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+//// login register popup section design ///
+
+.login-register-popup {
+    .login-reg-popup-model {
+        .model-container.login-reg-container {
+            width: 70%;
+            position: relative;
+            padding: 0;
+            scrollbar-color: #2B2525 #EBEBEB;
+
+            ::-webkit-scrollbar {
+                width: 4px;
+                height: 4px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #EBEBEB;
+                border-radius: 10px;
+            }
+
+            ::-moz-scrollbar {
+                width: 4px;
+                height: 4px;
+            }
+
+            ::-moz-scrollbar-track {
+                background: #EBEBEB;
+                border-radius: 10px;
+            }
+
+
+            ::-moz-scrollbar-thumb {
+                background: #2B2525;
+                border-radius: 1px;
+                opacity: 0.58;
+            }
+
+            ::-moz-scrollbar-track {
+                background: #EBEBEB;
+                border-radius: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #2B2525;
+                border-radius: 1px;
+                opacity: 0.58;
+            }
+
+            .popup-section {
+                width: 100%;
+                max-height: 90vh;
+                overflow-x: hidden;
+                overflow-y: auto;
+                padding: 25px 0px;
+                scrollbar-color: #2B2525;
+
+                .close-section {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    z-index: 9;
+                    cursor: pointer;
+                }
+
+                .header-content-section {
+                    .header-section {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 90px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .content-section {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: start;
+
+                        .common-section {
+                            width: 49%;
+
+                            &.login-section {
+                                &::after {
+                                    content: '';
+                                    border-right: 1px solid #EBEBEB;
+                                }
+                            }
+
+                            &.register-section {
+                                border-left: 1px solid #EBEBEB;
+                            }
+
+                            .popup-common-section {
+                                width: 90%;
+                                margin: auto;
+
+                                .title {
+                                    gap: 12px;
+
+                                    .header-title-section {
+                                        color: #2B2525;
+                                        font-weight: 600;
+                                        font-size: 24px;
+
+                                    }
+
+                                    .sub-title {
+                                        color: #2B2525;
+                                        font-size: 14px;
+                                        font-weight: 400;
+
+                                    }
+                                }
+
+                                .form-block {
+                                    padding-top: 20px;
+
+                                    .common-double-section {
+                                        flex-direction: row;
+                                        justify-content: space-between;
+
+                                        .input-block {
+                                            width: 48%;
+                                        }
+                                    }
+
+                                    .input-block {
+                                        width: 100%;
+                                        margin-bottom: 16px;
+
+                                        .input_label {
+                                            color: #3E484A;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            margin-bottom: 7px;
+
+                                            span {
+                                                color: #7F0E05;
+                                                // margin-left: 5px;
+                                            }
+                                        }
+
+                                        .MuiFormControl-root {
+                                            width: 100%;
+                                            margin: 0;
+
+                                            .MuiInputAdornment-root {
+                                                .MuiTypography-root {
+                                                    border-right: 1px solid rgba(0, 0, 0, 0.2);
+                                                    padding-right: 7px;
+                                                    color: #B5B3B3;
+                                                    font-weight: 500;
+                                                    margin-bottom: 0
+                                                }
+                                            }
+
+                                        }
+
+                                        &.input-icon-section {
+                                            position: relative;
+
+                                            .icon-section {
+                                                position: absolute;
+                                                right: 15px;
+                                                cursor: pointer;
+                                                top: 42px;
+                                                display: flex;
+                                                align-items: center;
+                                            }
+                                        }
+
+                                        .field-error {
+                                            color: #D91919 !important;
+                                            margin-bottom: -10px !important;
+                                            position: initial;
+                                        }
+
+                                        .required {
+                                            margin-bottom: 0px !important;
+                                        }
+
+                                        .required-field {
+                                            margin-bottom: 32px !important;
+                                        }
+
+                                        .required-position {
+                                            margin-bottom: 70px !important;
+                                        }
+
+                                        &.phone-section {
+                                            .MuiFormControl-root {
+                                                .MuiInputBase-root {
+                                                    input.MuiInputBase-input {
+                                                        padding-left: 0;
+                                                        border-top-left-radius: 0;
+                                                        border-bottom-left-radius: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .forgotpassword {
+                                        text-align: right;
+
+                                        .forgot-password {
+                                            color: #2B2525;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            cursor: pointer;
+                                            text-decoration: none;
+                                            display: initial;                                           
+                                            width: fit-content;
+
+                                        }
+                                    }
+
+                                    .button-section {
+                                        margin-top: 15px;
+                                        margin-bottom: 8px;
+                                        gap: 15px;
+
+                                        button {
+                                            width: 100%;
+
+                                            &.Mui-disabled {
+                                                background: #641233 !important;
+                                            }
+                                        }
+
+                                        .or {
+                                            text-align: center;
+                                            width: 70%;
+                                            margin: auto;
+
+                                            .MuiDivider-root {
+                                                &::before {
+                                                    border-top: thin solid #EBEBEB;
+                                                }
+
+                                                &::after {
+                                                    border-top: thin solid #EBEBEB;
+                                                }
+                                            }
+
+                                            .MuiDivider-wrapper {
+                                                color: #898D94;
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                            }
+                                        }
+
+                                        button.google-sign-in {
+                                            background: unset !important;
+                                            border: 1px solid #641233 !important;
+                                            text-transform: capitalize !important;
+                                            display: flex !important;
+                                            align-items: center !important;
+                                            justify-content: center !important;
+                                            border-radius: 22px !important;
+
+                                            .google-logo {
+                                                width: 22px;
+                                                height: 22px;
+                                                padding-right: 10px;
+
+                                                img {
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    object-fit: contain;
+                                                }
+                                            }
+
+                                            .sign-in-text {
+                                                color: #641233;
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                text-transform: capitalize;
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (max-width:1440px) {
+    .login-register-popup {
+        .login-reg-popup-model {
+            .model-container.login-reg-container {
+                .popup-section {
+                    .close-section {
+                        right: 18px;
+                        top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1399px) {
+    .login-register-popup {
+        .login-reg-popup-model {
+            .model-container.login-reg-container {
+                .popup-section {
+                    .header-content-section {
+                        .content-section {
+                            .common-section {
+                                .popup-common-section {
+                                    width: 90%;
+
+                                    .title {
+                                        .header-title-section {
+                                            font-size: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:992px) {
+    .login-register-popup {
+        .login-reg-popup-model {
+            .model-container.login-reg-container {
+                width: 80%;
+
+                .popup-section {
+                    .header-content-section {
+                        .content-section {
+                            .common-section {
+                                .popup-common-section {
+                                    .form-block {
+                                        .common-double-section {
+                                            flex-direction: column;
+
+                                            .input-block {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:860px) {
+    .login-register-popup {
+        .login-reg-popup-model {
+            .model-container.login-reg-container {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .login-register-popup {
+        .login-reg-popup-model {
+            .model-container.login-reg-container {
+                .popup-section {
+                    .header-section {
+                        display: block;
+                    }
+
+                    .close-section {
+                        right: 0;
+                        top: -25px;
+                    }
+
+                    .header-content-section {
+                        padding: 0px 20px;
+                        .content-section {
+                            flex-direction: column;
+                            gap: 10px;
+
+                            .common-section {
+                                width: 100%;
+
+                                &.register-section {
+                                    border: 0;
+                                }
+
+                                .popup-common-section {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:992px) and (max-width:1024px) {
+    .login-page {
+        .container {
+            .row {
+                .column-form {
+                    .form-block {
+                        h4 {
+                            font-size: 26px;
+                        }
+
+                        width: 84%;
+                        margin: 0 auto;
+                        padding-top: 61px;
+
+                        .button-section {
+                            gap: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:991px) {
+    .login-page {
+        .container {
+            width: 92%;
+            margin: 0 auto;
+
+            .row {
+                .column-form {
+                    width: 100%;
+
+                    .form-block {
+                        width: 78%;
+                        padding-bottom: 17px;
+                        padding-top: 50px;
+
+                        h4 {
+                            text-align: center;
+                            font-size: 24px;
+                            padding-bottom: 18px;
+                        }
+
+                        .input-block {
+                            .input-text {
+                                .MuiInputBase-root {
+                                    input {
+                                        padding: 11px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .button-section {
+                            gap: 15px;
+                        }
+
+                        .sign-up {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+    .login-page {
+        .container {
+            width: 93%;
+            margin: 0 auto;
+
+            .row {
+                .column-form {
+                    .form-block {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .login-page {
+        .container {
+            width: 93%;
+            margin: 0 auto;
+
+            .row {
+                .column-form {
+                    .form-block {
+                        h4 {
+                            font-size: 22px;
+                        }
+
+                        width: 100%;
+                        padding-top: 30px;
+
+                        .input-block {
+                            gap: 10px;
+                        }
+
+                        .button-section {
+                            gap: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .login-register-popup .login-reg-popup-model .model-container.login-reg-container {
+        .popup-section {
+            max-height: 88vh;
+
+            .close-section {
+                top: -20px;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width:1025px) and (max-width:1280px) {
+    .login-page .container .row .column .form-block {
+
+        .input-block .input-text .MuiInputBase-root input {
+            padding: 7px;
+        }
+
+        .login-button {
+            padding: 7px;
+        }
+
+        .google-sign-in {
+            padding: 5px;
+        }
+
+        .button-section {
+            gap: 12px;
+        }
+    }
+}
+
+@media (min-width:1536px) and (max-width:1920px) {
+    .login-page {
+        .container {
+            .row {
+                .column {
+                    .form-block {
+                        gap: 25px;
+                        padding-top: 84px;
+
+                        h4 {
+                            font-size: 40px;
+                        }
+
+                        .button-section {
+                            gap: 20px;
+                        }
+
+                        .input-block {
+                            gap: 8px;
+
+                            .input-text {
+                                display: flex;
+
+                                .MuiInputBase-root {
+                                    input {
+                                        padding: 14px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .login-button {
+                            padding: 13px;
+                            font-size: 16px;
+                        }
+
+                        .google-sign-in {
+                            padding: 12px;
+
+                            .sign-in-text {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

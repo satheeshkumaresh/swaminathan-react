@@ -1,0 +1,59 @@
+.popular-search-section {
+    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    margin-top: 30px;
+    .container {
+        width: 94%;
+        margin: auto;
+
+        .popular-section {
+            .popular-search-title {
+                color: #631233;
+                font-size: 14px;
+                font-weight: 600;
+                padding-bottom: 12px;
+            }
+
+            .popular-search-list {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                flex-direction: row;
+
+                .content-section {
+                    padding-right: 15px;
+                    padding-bottom: 12px;
+
+                    .content {
+                        width: 100%;
+                        color: #3E484A;
+                        font-weight: 400;
+                        font-size: 14px;
+                        white-space: nowrap;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: #631233;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+
+            }
+        }
+    }
+    &.checkout_popular_search_section{
+        display: none;
+    }
+}
+
+@media (max-width:767px){
+    .popular-search-section {
+        margin-top: 4em;
+    }
+}

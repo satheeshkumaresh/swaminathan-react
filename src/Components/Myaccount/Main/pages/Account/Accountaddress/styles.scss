@@ -1,0 +1,222 @@
+.accountdata-page {
+    gap: 20px;
+    padding: 22px 20px;
+    border-radius: 8px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid var(--unnamed-color-ebebeb);
+
+    .block {
+
+        color: #2B2525;
+
+        .info-newsletter {
+            flex-direction: row;
+
+            .contact-info {
+                width: 50%;
+                gap: 14px;
+                display: flex;
+                flex-direction: column;
+
+                h4 {
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+
+                .info-address {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    a {
+                        text-decoration: none;
+                        color: #2B2525;
+                        font-weight: 400;
+                    }
+
+                    .name-sec {
+                        flex-direction: row;
+                        gap: 4px;
+
+                        p {
+                            color: #2B2525;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .edit-password {
+                    flex-direction: row;
+                    gap: 18px;
+
+                    a {
+                        color: #898D94;
+                        text-decoration: none;
+                        font-size: 14px;
+
+                        &:hover {
+                            color: #9B3C0B;
+                        }
+                    }
+
+                }
+            }
+
+            .newsletter {
+                width: 50%;
+                gap: 14px;
+                display: flex;
+                flex-direction: column;
+
+                h4 {
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+
+                .subscribe {
+
+                    a {
+                        text-decoration: none;
+                        color: #898D94;
+                        font-size: 14px;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #9B3C0B;
+                        }
+                    }
+                }
+            }
+        }
+
+        .MuiDivider-root {
+            margin: 22px 0;
+        }
+
+        .address-book {
+            .address-header {
+                padding-bottom: 22px;
+                font-weight: 600;
+                color: #2B2525;
+                font-size: 18px;
+            }
+
+            .billing-shipping {
+                flex-direction: row;
+
+                .billing {
+                    width: 50%;
+                    gap: 14px;
+                    display: flex;
+                    flex-direction: column;
+
+                    h4 {
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+
+                    .info-address {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+
+                    }
+                }
+
+                .shipping {
+                    width: 50%;
+                    gap: 14px;
+                    display: flex;
+                    flex-direction: column;
+
+                    h4 {
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+
+                    .info-address {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+                    }
+                }
+
+                .billing,
+                .shipping {
+                    .edit {
+                        a {
+                            color: #898D94;
+                            text-decoration: none;
+                            font-size: 14px;
+
+                            &:hover {
+                                color: #9B3C0B;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .accountdata-page {
+        .block {
+            .info-newsletter {
+                flex-direction: column;
+                gap: 22px;
+
+                .contact-info,
+                .newsletter {
+                    width: 100%;
+                }
+            }
+
+            .address-book {
+                .billing-shipping {
+                    flex-direction: column;
+                    gap: 22px;
+
+                    .billing,
+                    .shipping {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .accountdata-page {
+        padding: 10px;
+    }
+}
+
+@media (min-width:1536px) {
+    .accountdata-page {
+        .block {
+            .info-newsletter {
+                .contact-info {
+                    h4 {
+                        font-size: 20px;
+                    }
+                }
+
+                .newsletter {
+                    h4 {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .address-book {
+                .address-header {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

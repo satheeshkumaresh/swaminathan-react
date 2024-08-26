@@ -1,0 +1,176 @@
+.new-category-product-grid-section {
+    margin-bottom: 15px;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 10px 12px;
+    padding-bottom: 0;
+
+    .slick-slider {
+        button.slick-arrow {
+            top: 52%;
+            z-index: 99;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            transform: translate(0, -100%);
+        }
+
+        button.slick-prev {
+            left: -3%;
+            background-image: url("../../../../../Assets/home/BannerLeft.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+
+            &:hover {
+                background-image: url("../../../../../Assets/home/BannerLeftHover.svg");
+            }
+        }
+
+        button.slick-prev::before {
+            content: unset;
+            margin-top: 5px;
+        }
+
+        button.slick-next {
+            right: -3%;
+            background-image: url("../../../../../Assets/home/BannerRight.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+
+            &:hover {
+                background-image: url("../../../../../Assets/home/BannerRightHover.svg");
+            }
+        }
+
+        button.slick-next::before {
+            margin-bottom: 3px;
+            content: unset;
+        }
+
+        .slick-list {
+            padding-top: 15px;
+
+            .slick-track {}
+        }
+    }
+    .slick-slider .slick-slide>div .new-category-product-grid:first-child .new-category-product {
+        margin-right: 10px;
+    }
+    .slick-slider .slick-slide>div .new-category-product-grid:nth-child(2) .new-category-product {
+        margin-left: 10px;
+    }
+    .new-category-product-grid {
+        margin-top: 15px;
+        &:nth-child(even) {
+            margin-top: 0;
+        }
+        &:nth-child(odd) {
+            margin-top: 0;
+        }
+        &.grid4-child {
+            margin-top: 0;
+        }
+
+        &.grid3-child {
+            margin-top: 0;
+        }
+
+        .slick-list {
+            width: 100%;
+
+            .slick-track {
+                width: 100% !important;
+
+                .slick-slide {
+                    width: 100% !important;
+                }
+            }
+        }
+        .new-category-product {
+            .product-grid {
+                position: relative;
+                .product-img-link {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 95%;
+                    height: 95%;
+                    margin: auto;
+                }
+            }
+
+            .all-category-title {
+                width: 70%;
+                margin: 0 auto; 
+                text-decoration: none;
+                .all-category-title {
+                    color: #3E484A;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-align: center;
+                    margin: 5px auto;
+                    width: 90%;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: initial;
+                    text-decoration: none;
+                }
+            }
+
+            .category-product-img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.production-collections-block .newarrival-grid .new-category-product-grid-section:last-child .slick-slider button.slick-arrow {
+    top: 52% !important;
+}
+
+@media (min-width:993px) and (max-width:1535px) {
+    .new-category-product-grid-section .slick-slider {
+        button.slick-arrow {
+            width: 30px !important;
+            height: 30px !important;
+        }
+
+        button.slick-next {
+            right: -4% !important;
+        }
+
+        button.slick-prev {
+            left: -4% !important;
+        }
+    }
+
+}
+
+@media (min-width:993px) and (max-width:1280px) {
+    .production-collections-block {
+        .newarrival-grid {
+            grid-template-columns: 50% 50%;
+
+            .tradition-grid-section {
+                display: none;
+            }
+            .new-category-product-grid-section {
+                margin-right: 8px;
+
+                &:last-child {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}

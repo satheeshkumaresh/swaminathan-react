@@ -1,0 +1,120 @@
+.order-success-container {
+    margin-top: 5em;
+
+    .common-container {
+        text-align: center;
+
+        .success-icon {
+            color: #232F3E;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+
+            svg {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .title {
+            font-size: 24px;
+            color: #641233;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .info {
+            p {
+                font-size: 16px;
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+
+            .order-number {
+                color: #2B2525;
+                font-weight: bold;
+                padding-left: 5px;
+            }
+        }
+
+        .common_button_block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                margin-top: 2em;
+                width: 300px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:767px) {
+
+    .order-success-container {
+        .common-container {
+            .success-icon {
+                img {
+                    width: 90px;
+                    height: 90px;
+                    object-fit: contain;
+                }
+            }
+
+            .title {
+                font-size: 20px;
+            }
+
+            .info {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .order-success-container {
+        width: 93%;
+
+        .common-container {
+            width: 100%;
+            margin: 0;
+
+
+            .common_button_block {
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1536px) {
+    .order-success-container {
+        .common-container {
+            margin: 4.5em auto;
+
+
+            .title {
+                font-size: 32px;
+            }
+
+            .info {
+                p {
+                    font-size: 20px;
+                    margin-bottom: 14px;
+                }
+            }
+        }
+    }
+}

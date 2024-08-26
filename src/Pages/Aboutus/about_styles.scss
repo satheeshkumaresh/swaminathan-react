@@ -1,0 +1,441 @@
+.aboutus-container.about-us-page {
+    width: 100%;
+
+    .block {
+        width: 100%;
+        margin: 10px 0 0;
+        border: 0;
+        padding: 0;
+        gap: 25px;
+
+        .title-section {
+            padding: 15px 0 0;
+            text-align: center;
+            gap: 15px;
+
+            .main-title {
+                color: #2B2525;
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+            .sub-title {
+                color: #2B2525;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+        }
+
+        .banner-img-section {
+            img.desktop {
+                display: block;
+            }
+
+            img.mobile {
+                display: none;
+            }
+        }
+
+        .secondary-title-section {
+            text-align: center;
+            gap: 15px;
+            width: 50%;
+            margin: auto;
+
+            .main-title {
+                color: #2B2525;
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            .sub-title {
+                color: #2B2525;
+                font-size: 14px;
+                font-weight: 400;
+
+            }
+        }
+
+        .about-info-section {
+            position: relative;
+            background: url('../../Assets/Aboutus/AboutBg.svg');
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            .about-info {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 2.5em 0;
+                gap: 40px;
+
+                .manufacturing-section {
+                    width: 70%;
+                    margin: auto;
+                    gap: 30px;
+
+                    .title {
+                        color: #FFFFFF;
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+
+                    .manufacturing-grid-content {
+                        .manufacturing-grid {
+                            display: grid;
+                            grid-template-columns: 20% 20% 20% 20%;
+                            align-items: start;
+                            justify-content: space-between;
+                            row-gap: 30px;
+
+                            .grid {
+                                gap: 10px;
+                                width: 210px;
+
+                                display: grid;
+
+                                img {
+                                    width: 210px;
+                                    height: 130px;
+                                    object-fit: contain;
+                                }
+
+                                .content {
+                                    color: #FFFFFF;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    width: 210px;
+                                    word-wrap: break-word;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                .wholesale-section {
+                    width: 70%;
+                    margin: auto;
+                    gap: 30px;
+
+                    .title {
+                        color: #FFFFFF;
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+
+                    .wholesale-grid-content {
+                        .wholesale-grid {
+                            display: grid;
+                            grid-template-columns: 30% 30% 30%;
+                            align-items: start;
+                            justify-content: space-between;
+                            row-gap: 30px;
+
+                            .grid {
+                                gap: 10px;
+                                width: 300px;
+
+                                display: grid;
+
+                                img {
+                                    width: 300px;
+                                    height: 152px;
+                                    object-fit: contain;
+                                }
+
+                                .content {
+                                    color: #FFFFFF;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    width: 300px;
+                                    word-wrap: break-word;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1280px) {
+    .aboutus-container.about-us-page {
+        .block {
+            .secondary-title-section {
+                width: 60%;
+            }
+
+            .about-info-section {
+                .about-info {
+                    gap: 40px;
+
+                    .manufacturing-section {
+                        width: 80%;
+                    }
+
+                    .wholesale-section {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1099px) {
+    .aboutus-container.about-us-page {
+        .block {
+            .secondary-title-section {
+                width: 70%;
+            }
+
+            .about-info-section {
+                .about-info {
+                    .manufacturing-section {
+                        width: 85%;
+
+                        .manufacturing-grid-content {
+                            .manufacturing-grid {
+                                grid-template-columns: 30% 30% 30%;
+                            }
+                        }
+                    }
+
+                    .wholesale-section {
+                        width: 85%;
+
+                        .wholesale-grid-content {
+                            .wholesale-grid {
+                                .grid {
+                                    width: 250px;
+
+                                    img {
+                                        width: 250px;
+                                    }
+
+                                    .content {
+                                        width: 250px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .aboutus-container.about-us-page {
+        .block {
+            .about-info-section {
+                .about-info {
+                    .wholesale-section {
+                        .wholesale-grid-content {
+                            .wholesale-grid {
+                                .grid {
+                                    width: 200px;
+
+                                    img {
+                                        width: 200px;
+                                    }
+
+                                    .content {
+                                        width: 200px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:820px) {
+    .aboutus-container.about-us-page {
+        .block {
+            .about-info-section {
+                .about-info {
+                    .manufacturing-section {
+                        .manufacturing-grid-content {
+                            .manufacturing-grid {
+                                .grid {
+                                    width: 190px;
+
+                                    img {
+                                        width: 190px;
+                                    }
+
+                                    .content {
+                                        width: 190px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:767px) {
+    .aboutus-container.about-us-page {
+        .block {
+            .about-info-section {
+                .about-info {
+                    .wholesale-section {
+                        .wholesale-grid-content {
+                            .wholesale-grid {
+                                grid-template-columns: 48% 48%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:720px) {
+    .aboutus-container.about-us-page {
+        .block {
+            .about-info-section {
+                .about-info {
+                    .manufacturing-section {
+                        .manufacturing-grid-content {
+                            .manufacturing-grid {
+                                .grid {
+                                    width: 100%;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+
+                                    .content {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .wholesale-section {
+                        .wholesale-grid-content {
+                            .wholesale-grid {
+                                .grid {
+                                    width: 100%;
+
+                                    img {
+                                        width: 100%;
+                                    }
+
+                                    .content {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:720px) {
+    .aboutus-container.about-us-page {
+        .block {
+            .about-info-section {
+                .about-info {
+                    .manufacturing-section {
+                        .manufacturing-grid-content {
+                            .manufacturing-grid {
+                                grid-template-columns: 48% 48%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:567px) {
+    .aboutus-container.about-us-page {
+        .block {
+
+            .banner-img-section {
+                img.desktop {
+                    display: none;
+                }
+
+                img.mobile {
+                    display: block;
+                }
+            }
+
+            .secondary-title-section {
+                width: 85%;
+            }
+
+            .about-info-section {
+                .about-info {
+                    .manufacturing-section {
+                        .title {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .wholesale-section {
+                        .title {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:359px) {
+    .aboutus-container.about-us-page {
+        .block {
+            .secondary-title-section {
+                width: 95%;
+                padding: 0 15px;
+            }
+
+            .about-info-section {
+                .about-info {
+                    .manufacturing-section {
+                        .manufacturing-grid-content {
+                            .manufacturing-grid {
+                                grid-template-columns: 100%;
+                            }
+                        }
+                    }
+
+                    .wholesale-section {
+                        .wholesale-grid-content {
+                            .wholesale-grid {
+                                grid-template-columns: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

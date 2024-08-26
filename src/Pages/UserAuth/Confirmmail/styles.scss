@@ -1,0 +1,134 @@
+.confirm-mail {
+    .container {
+        background: #FAFAFA;
+
+        .row {
+            width: 100%;
+            max-width: 550px;
+            margin: 5rem auto;
+            text-align: center;
+            background: white;
+            padding: 50px;
+
+            .image-section {
+                margin-bottom: 15px;
+
+                svg {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+            h4 {
+                color: #3E484A;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 1.4em;
+                margin-bottom: 10px;
+            }
+
+            .content{
+                p {
+                    color: #3E484A;
+                    margin-bottom: 3px;
+                    font-size: 12px;
+                }
+                p:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width:1536px) and (max-width:1920px) {
+    .confirm-mail {
+        .container {
+            .row {
+                max-width: 650px;
+                .image-section {
+                    svg {
+                        width: 75px !important;
+                        height: 75px !important;
+                    }
+                }
+                h4 {
+                    font-size: 24px;
+                }
+                .content{
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .confirm-mail {
+        .row {
+            .image-section {
+                svg {
+                    width: 70px !important;
+                    height: 70px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:639px) {
+    .confirm-mail {
+        .row {
+            width: 93% !important;
+            margin: 4rem auto !important;
+            padding: 50px 0 !important;
+            max-width: inherit !important;
+
+            >* {
+                padding: 0 20px;
+            }
+
+            .image-section {
+                padding-top: 0px !important;
+
+                svg {
+                    width: 65px !important;
+                    height: 65px !important;
+                }
+            }
+
+            h4 {
+                font-size: 18px !important;
+            }
+
+        }
+
+    }
+}
+
+@media (max-width:480px) {
+    .confirm-mail {
+        .row {
+            padding: 30px 0 !important;
+            >* {
+                padding: 0 20px;
+            }
+
+            .image-section {
+                svg {
+                    width: 60px !important;
+                    height: 60px !important;
+                }
+            }
+
+            h4 {
+                font-size: 18px !important;
+            }
+
+        }
+    }
+}

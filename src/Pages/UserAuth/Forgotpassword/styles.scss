@@ -1,0 +1,429 @@
+.forgotpassword {
+    .container {
+        .row {
+            .form-block {
+                width: 50%;
+                margin: 0 auto;
+                padding-bottom: 50px;
+
+                .field-error {
+                    color: #bf1e11 !important;
+                }
+
+                .image-section {
+                    width: 65%;
+                    margin: 0 auto;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                h4 {
+                    text-align: center;
+                    font-size: 22px;
+                    padding: 25px;
+                    color: #232F3E;
+                }
+
+                .block-border {
+                    border: 1px solid #00000033;
+                    width: 68%;
+                    margin: 0 auto;
+
+                    .content {
+                        padding: 30px 55px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 28px;
+
+                        p {
+                            color: #67625B;
+                        }
+
+                        .input-block {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+                            position: relative;
+                            padding-bottom: 6px;
+
+                            .input_label {
+                                color: #3E484A;
+
+                                span {
+                                    color: #7F0E05;
+                                }
+                            }
+
+                            .input-text {
+                                display: flex;
+
+                                .MuiInputBase-root {
+                                    input {
+                                        padding: 8px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .button-section {
+                            gap: 15px;
+
+                            .reset-button {
+                                background-color: #232F3E;
+                                color: white;
+                                text-transform: capitalize;
+
+                            }
+
+                            .Cancel-button {
+                                color: #232F3E;
+                                border: 1px solid #232F3E;
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+// reset password popup design
+.forgetpassword-popup-section {
+    .forgetpassword-popup-model {
+        .model-container.forgetpass-container {
+            padding-top: 20px;
+            width: 35%;
+
+            .popup-section {
+                width: 100%;
+
+                .close-section {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    cursor: pointer;
+
+                }
+
+                .header-content-section {
+                    width: 100%;
+
+                    .content-section {
+                        padding-bottom: 20px;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: start;
+                        width: 100%;
+
+                        .common-section {
+                            width: 100%;
+
+
+                            .popup-common-section {
+                                width: 100%;
+
+                                .title {
+                                    gap: 12px;
+
+                                    .header-title-section {
+                                        color: #2B2525;
+                                        font-weight: 600;
+                                        font-size: 24px;
+
+                                    }
+
+                                    .sub-title {
+                                        color: #2B2525;
+                                        font-size: 14px;
+                                        font-weight: 400;
+
+                                    }
+                                }
+
+                                .form-block {
+                                    padding-top: 20px;
+
+                                    .input-block {
+                                        width: 100%;
+                                        margin-bottom: 16px;
+
+                                        .input_label {
+                                            color: #3E484A;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            margin-bottom: 7px;
+
+                                            span {
+                                                color: #7F0E05;
+                                                margin-left: 5px;
+                                            }
+                                        }
+
+                                        .field-error {
+                                            color: #D91919 !important;
+                                            margin-bottom: -10px !important;
+                                            position: initial;
+                                        }
+
+                                        .MuiFormControl-root {
+                                            width: 100%;
+
+                                            .MuiInputAdornment-root {
+                                                .MuiTypography-root {
+                                                    border-right: 1px solid rgba(0, 0, 0, 0.2);
+                                                    padding-right: 7px;
+                                                    color: #B5B3B3;
+                                                    font-weight: 500;
+                                                    margin-bottom: 0
+                                                }
+                                            }
+
+                                        }
+
+                                    }
+
+                                    .button-section {
+                                        margin-top: 15px;
+
+                                        button {
+                                            width: 100%;
+
+                                            &.Mui-disabled {
+                                                background: #641233 !important;
+                                            }
+                                        }
+                                    }
+
+
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1536px) {
+    .forgetpassword-popup-section {
+        .forgetpassword-popup-model {
+            .model-container.forgetpass-container {
+                width: 35%;
+            }
+        }
+    }
+}
+
+@media (max-width:1049px) {
+    .forgetpassword-popup-section {
+        .forgetpassword-popup-model {
+            .model-container.forgetpass-container {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (max-width:860px) {
+    .forgetpassword-popup-section {
+        .forgetpassword-popup-model {
+            .model-container.forgetpass-container {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media (max-width:639px) {
+    .forgetpassword-popup-section {
+        .forgetpassword-popup-model {
+            .model-container.forgetpass-container {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media (max-width:485px) {
+    .forgetpassword-popup-section {
+        .forgetpassword-popup-model {
+            .model-container.forgetpass-container {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .forgetpassword-popup-section {
+        .forgetpassword-popup-model {
+            .model-container.forgetpass-container {
+                width: 90%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:1024px) {
+    .forgotpassword {
+        .container {
+            .row {
+                .form-block {
+                    padding-top: 25px;
+
+                    h4 {
+                        font-size: 26px;
+                    }
+
+                    .image-section {
+                        display: none;
+                    }
+
+                    .block-border {
+                        width: 91%;
+
+                        .content {
+                            gap: 20px;
+                            padding: 28px 34px;
+
+                            .input-block {
+                                .input-text {
+                                    .MuiInputBase-root input {
+                                        padding: 10px;
+                                    }
+                                }
+                            }
+
+                            .button-section {
+
+                                .reset-button {
+                                    padding: 10px;
+                                }
+
+                                .Cancel-button {
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .forgotpassword {
+        .container {
+            .row {
+                .form-block {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .forgotpassword {
+        .container {
+            .row {
+                .form-block {
+                    .block-border {
+                        .content {
+                            padding: 20px 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:480px) {
+    .forgotpassword {
+        .container {
+            width: 93%;
+            margin: 0 auto;
+
+            .row {
+                .form-block {
+                    padding-top: 0;
+                    width: 100%;
+
+                    h4 {
+                        font-size: 28px;
+                        padding: 28px;
+                    }
+
+                    .block-border {
+                        width: 100%;
+
+                        .content {
+                            padding: 20px 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1025px) and (max-width:1200px) {
+    .forgotpassword {
+        .container {
+            .row {
+                .form-block {
+                    .block-border {
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1536px) {
+    .forgotpassword {
+        .container {
+            .row {
+                .form-block {
+
+                    h4 {
+                        font-size: 28px;
+                    }
+
+                    .block-border {
+                        .content {
+                            .input-block {
+                                .input-text {
+                                    .MuiInputBase-root {
+                                        input {
+                                            padding: 12px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .button-section {
+                                button {
+                                    padding: 10px;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

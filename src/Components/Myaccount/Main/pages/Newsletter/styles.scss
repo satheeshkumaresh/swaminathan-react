@@ -1,0 +1,120 @@
+.newsletter-pages {
+    .section {
+        border-radius: 8px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid var(--unnamed-color-ebebeb);
+        min-height: 289px;
+
+        .main_block {
+            padding: 20px;
+            color: #2B2525;
+            gap: 20px;
+
+            h4 {
+                font-weight: 700;
+            }
+
+            .subscribe-block {
+                display: flex;
+                align-items: center;
+                gap: 3px;
+
+                .MuiCheckbox-root {
+                    padding: 0;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+
+                    }
+                }
+
+                .MuiCheckbox-root {
+                    color: transparent;
+                    border: 1px solid #898D94;
+                    border-radius: 0;
+                    width: 16px;
+                    height: 16px;
+
+                    &.Mui-checked {
+                        color: #1976d2;
+                    }
+                }
+
+                .MuiFormGroup-root {
+                    .MuiFormControlLabel-root {
+                        margin: 0;
+                        gap: 5px;
+                        align-items: center;
+
+                        .MuiTypography-root {
+                            font-size: 14px;
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+            .form-error-lable {
+                color: #D91919;
+            }
+
+        }
+    }
+
+    .button-block {
+        display: flex;
+        gap: 12px;
+        justify-content: space-between;
+        padding-top: 20px;
+
+        .back {
+            width: 160px;
+        }
+
+        .save {
+            width: 160px;
+        }
+    }
+
+}
+
+@media (max-width:992px) {
+    .newsletter-pages {
+        .section {
+            min-height: auto;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .newsletter-pages {
+        .section {
+            .main_block {
+                padding: 10px 15px;
+            }
+        }
+
+        .button-block {
+            flex-direction: column;
+
+            button {
+                width: 100% !important;
+            }
+
+            .save {
+                order: 1;
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .newsletter-pages {
+        .section {
+            .main_block {
+                padding: 10px;
+            }
+        }
+    }
+}

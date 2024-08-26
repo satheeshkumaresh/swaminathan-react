@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.273" height="16.504" viewBox="0 0 19.273 16.504">
+  <g id="XMLID_60_" transform="translate(-12.719 -16)">
+    <g id="XMLID_145_" transform="translate(12.719 16)">
+      <rect id="Rectangle_2581" data-name="Rectangle 2581" width="19.273" height="16.504" transform="translate(0)" fill="none" opacity="0.25"/>
+      <g id="Group_3565" data-name="Group 3565" transform="translate(0.17 0.157)">
+        <g id="Group_3564" data-name="Group 3564">
+          <g id="Group_3563" data-name="Group 3563">
+            <g id="XMLID_138_" transform="translate(0.51 0.525)">
+              <path id="Path_11769" data-name="Path 11769" d="M23.2,19.23a1,1,0,0,1,1.862,0L32.726,31.9c.525.839.131,1.548-.866,1.548H16.411c-1,0-1.39-.682-.866-1.548Z" transform="translate(-15.313 -18.6)" fill="#fff"/>
+            </g>
+            <path id="Path_11770" data-name="Path 11770" d="M31.711,30.161,24.052,17.492a1.675,1.675,0,0,0-1.364-.892,1.619,1.619,0,0,0-1.364.892L13.665,30.161a1.557,1.557,0,0,0-.131,1.6,1.6,1.6,0,0,0,1.443.708H30.4a1.6,1.6,0,0,0,1.443-.708A1.557,1.557,0,0,0,31.711,30.161Zm-.761,1.1c-.079.131-.289.184-.551.184H14.976a.721.721,0,0,1-.551-.184c-.079-.131-.026-.341.131-.577l7.633-12.643c.157-.236.341-.393.5-.393s.341.131.5.393l7.659,12.643C30.976,30.922,31.029,31.158,30.95,31.263Z" transform="translate(-13.368 -16.6)" fill="#c87e09"/>
+          </g>
+          <g id="XMLID_135_" transform="translate(8.376 3.777)">
+            <path id="XMLID_137_" d="M46.769,38.187c0,.367,0,.682-.525.682h0c-.525,0-.525-.315-.525-.682l-.42-6.505c0-.367.42-.682.971-.682h0c.525,0,.971.315.971.682Z" transform="translate(-45.3 -31)" fill="#c87e09"/>
+            <path id="XMLID_136_" d="M47.379,64.039a.839.839,0,1,1-.839-.839A.829.829,0,0,1,47.379,64.039Z" transform="translate(-45.595 -54.754)" fill="#c87e09"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,182 @@
+.info-section-block {
+    background-color: #fff;
+    padding-bottom: 15px;
+
+    .container {
+
+        .anywhere-section {
+            .info-section-title {
+                color: #3F494B;
+                font-size: 20px;
+                font-weight: 600;
+                padding-bottom: 15px;
+            }
+
+            .info-section-quote {
+                color: #631233;
+                font-size: 14px;
+                font-weight: 400;
+                padding-bottom: 15px;
+            }
+
+            .info-section-text {
+                color: #3E484A;
+                font-size: 14px;
+                font-weight: 400;
+                padding-bottom: 2px;
+            }
+        }
+        // skeleton
+        .anywhere-section.skeleton {
+            img {
+                width: 95%;
+            }
+        }
+        // skeleton
+
+        .manufacture-section-title {
+            color: #3F494B;
+            font-weight: 600;
+            font-size: 18px;
+            padding-top: 12px;
+            padding-bottom: 6px;
+        }
+
+        .manufacture-section-text,
+        .manufacture-product-list {
+            color: #3E484A;
+            font-size: 14px;
+            font-weight: 400;
+            padding-bottom: 4px;
+        }
+
+        .manufacture-product-list::before {
+            content: "-";
+        }
+    }
+}
+
+.info-choose-section {
+    .container-section {
+        .info-section-block {
+            .container {
+                border-left: 9px solid #1C9C17;
+                padding-left: 10px;
+                padding-bottom: 0;
+                padding-top: 0;
+                margin-top: 15px;
+                margin-bottom: 14px;
+
+                .manufacture-product-section {
+                    padding-bottom: 0;
+
+                    .manufacture-list {
+                        padding-bottom: 0;
+                        li{
+                            padding: 0px;
+                        }
+                        .showMore {
+                            color: #641233;
+                            font-size: 14px;
+                            font-weight: 600;
+                            width: fit-content;
+                            display: block;
+                            padding-left: 8px;
+                            padding-top: 10px;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .info-choose-section {
+        .container-section {
+            .info-section-block {
+                .container {
+                    .manufacture-product-section {
+                        .manufacture-list {
+                            display: flex;
+                            justify-content: start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // skeleton
+    .info-choose-section.skeleton {
+        .container-section {
+            grid-template-columns: 100%;
+            .info-section-block {
+                .container {
+                    width: 100%;
+                    .anywhere-section.skeleton {
+                        width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // skeleton
+
+}
+
+@media (max-width:567px) {
+    .info-section-block {
+        .container {
+            .anywhere-section {
+                .info-section-text {
+                    font-size: 14px;
+                }
+            }
+
+            .manufacture-product-section {
+                .manufacture-section-text {
+                    font-size: 14px;
+                }
+
+                .manufacture-list {
+                    .MuiListItemText-root {
+                        .MuiTypography-root {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1536px) {
+    .info-section-block .container {
+        .anywhere-section {
+            .info-section-quote {
+                font-size: 16px;
+            }
+
+            .info-section-text {
+                font-size: 16px;
+                padding-bottom: 4px;
+            }
+        }
+
+        .manufacture-section-text,
+        .manufacture-product-list {
+            font-size: 16px;
+        }
+    }
+
+}
+
+.info-choose-section .container-section .info-section-block .container .manufacture-product-section .manufacture-list .showMore {
+    font-size: 16px;
+    padding: 0;
+    padding-top: 5px;
+}

@@ -1,0 +1,113 @@
+.accountsuccess{
+    .container {
+        background: #FAFAFA;
+
+        .row {
+            width: 540px;
+            margin: 5rem auto;
+            text-align: center;
+            background: white;
+            padding: 30px 40px;
+            gap: 15px;
+            margin-bottom: 8rem;
+
+            .imagesection{
+                svg{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            h4 {
+                color: #3E484A;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            p {
+                color: #3E484A;
+               
+            }
+        }
+    }
+}
+@media (min-width:1536px) and (max-width:1920px) {
+    .accountsuccess{
+        .container {
+            .row {
+                width: 665px;
+                
+            .imagesection{
+                svg{
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+                h4 {
+                    font-size: 24px;
+                }
+            }
+        } 
+    }
+}
+@media (max-width:992px) {
+    .accountsuccess{
+       
+        .row {
+            .imagesection{
+                svg{
+                    width: 50px !important;
+                    height: 50px !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width:600px) {
+    .accountsuccess{
+       
+        .row {
+            width: 93% !important;
+            margin: 5rem auto !important;
+            gap: 15px !important;
+            padding: 30px 0 !important;
+            margin-bottom: 8rem !important;
+            >*{
+                padding: 0 60px;
+                width: 300px;
+                margin: auto;
+            }
+            .imagesection{
+                padding-top: 0px !important;
+                svg{
+                    width: 45px !important;
+                    height: 45px !important;
+                }
+            }
+            h4 {
+                font-size: 18px !important;
+            }
+        }
+
+    }
+}
+@media (max-width:480px) {
+    .accountsuccess{
+        .row {
+            gap: 10px !important;
+            >*{
+                padding: 0 0px;
+                width: 75%;
+            }
+            .imagesection{
+                svg{
+                    width: 40px !important;
+                    height: 40px !important;
+                }
+            }
+            h4 {
+                font-size: 16px !important;
+            }
+        }
+    }
+}

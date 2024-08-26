@@ -1,0 +1,1412 @@
+.related-product-sec {
+    background-color: #fff;
+    margin-bottom: 16px;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+
+    .trendingnow-section {
+        padding: 15px 15px 0;
+
+        .product-title-block {
+            padding: 0px 0px 0;
+        }
+
+        .product-grid-section {
+            .slick-slider {
+                .slick-list {
+                    .slick-track {
+                        margin-left: 0px;
+                    }
+                }
+
+                button.slick-arrow {
+                    top: 40%;
+                    z-index: 99;
+                    border-radius: 50%;
+                    width: 37px;
+                    height: 37px;
+                    transform: translate(0, -100%);
+                }
+
+                button.slick-prev {
+                    left: -1%;
+                    background-image: url("../../../../Assets/home/BannerLeft.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100%;
+
+                    &:hover {
+                        background-image: url("../../../../Assets/home/BannerLeftHover.svg");
+                    }
+                }
+
+                button.slick-prev::before {
+                    content: unset;
+                    margin-top: 5px;
+                }
+
+                button.slick-next {
+                    right: -1%;
+                    background-image: url("../../../../Assets/home/BannerRight.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100%;
+
+                    &:hover {
+                        background-image: url("../../../../Assets/home/BannerRightHover.svg");
+                    }
+                }
+
+                button.slick-next::before {
+                    margin-bottom: 3px;
+                    content: unset;
+                }
+
+                .slick-list {
+                    margin: 0 -10px;
+
+                    .slick-track {
+                        .slick-slide.slick-current {
+                            .product-grid-list {
+                                border-right: 1px solid #EBEBEB;
+                            }
+                        }
+
+                        .slick-slide {
+                            .product-grid-list {
+                                border-right: 1px solid #EBEBEB;
+                            }
+                        }
+
+                        .slick-slide.slick-active {
+                            .product-grid-list {
+                                border-right: 1px solid #EBEBEB;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+            .product-grid-list {
+                border: 1px solid #EBEBEB;
+                border-top: 0;
+                border-left: 0;
+                border-bottom: 0;
+
+                .product-image-info-grid {
+                    padding: 15px 10px 0px 10px;
+
+                    .product-image-grid {
+                        position: relative;
+
+                        .image-link-section {
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+
+                        .tag-section {
+                            position: absolute;
+                            bottom: 0;
+                            width: 50%;
+
+                            .tag-content {
+                                border-radius: 0px 24px 0px 0px;
+                                background-color: #1C9B17;
+                                color: #fff;
+                                font-size: 10px;
+                                font-weight: 600;
+                                text-align: center;
+                                padding: 2px 0;
+
+
+
+                                &.new-arrival {
+                                    margin-top: 8px;
+                                    background-color: #D31414;
+                                }
+
+                            }
+                        }
+
+                        .hover-tag-section {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            display: none;
+
+                            .tag-img {
+                                margin-bottom: 10px;
+                                cursor: pointer;
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+
+                            &:last-child {
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+
+                    .product-info-section {
+                        padding: 10px 7px 0px;
+                        text-align: center;
+
+                        .productname-text {
+                            color: #3E484A;
+                            font-size: 14px;
+                            font-weight: 400;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: initial;
+                            min-height: 35px;
+                            text-decoration: none;
+                        }
+
+                        .price-section {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            min-height: 50px;
+                            max-height: 50px;
+
+                            .specialprice-tag {
+                                color: #A8B0BB;
+                                font-size: 12px;
+                                font-weight: 400;
+                            }
+
+                            &.hidden {
+                                flex-direction: column;
+
+                                .hidden {
+                                    color: #A8B0BB;
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    visibility: hidden;
+                                    padding: 0px;
+                                }
+                            }
+
+                            &.hidden.special {
+                                .special_price {
+                                    flex-direction: row;
+                                }
+                            }
+                        }
+
+                        .multiple {
+                            flex-direction: column;
+                            align-items: center !important;
+
+                            .price_block {
+                                display: flex;
+
+                                .special-price {
+                                    padding-top: 0;
+                                }
+                            }
+                        }
+
+                        .product-price-text {
+                            color: #1C9C17;
+                            font-weight: 600;
+                            font-size: 14px;
+                            padding: 7px 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .product-price-text.old-price {
+                            color: #A8B0BB;
+                            text-decoration: line-through;
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin-left: 5px;
+                        }
+
+
+
+                        .special-price {
+                            color: #1C9C17;
+                            font-size: 14px;
+                            font-weight: 600;
+                            margin-left: 5px;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        button.product-addcart-btn {
+                            margin-bottom: 15px;
+
+                            &.Mui-disabled {
+                                color: #fff;
+                            }
+                        }
+
+                        button.product-addcart-btn.synchronise-icon {
+                            svg {
+                                width: 20px;
+                                height: 20px;
+                            }
+
+                            &.Mui-disabled {
+                                background: #641233 !important;
+                                width: 100%;
+                                color: #fff !important;
+                            }
+                        }
+
+                        button.product-addcart-btn.synchronise-icon.Mui-disabled.outlined_default_btn {
+                            background: unset !important;
+                            border: 1px solid #641233 !important;
+                            color: #641233 !important;
+                        }
+
+                        button.product-addcart-btn.synchronise-icon.rotateUpdate {
+                            svg {
+                                animation: rotateUpdate 1s infinite;
+
+                                @keyframes rotateUpdate {
+                                    from {
+                                        transform: rotate(0deg);
+                                    }
+
+                                    to {
+                                        transform: rotate(360deg);
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                &:hover {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .hover-tag-section {
+                                display: flex;
+
+                                p.tag-img {
+                                    .product-wishlist-hover {
+                                        display: none;
+                                    }
+
+                                    .product-wishlist {
+                                        display: block;
+                                    }
+
+                                    &:hover {
+                                        .product-wishlist-hover {
+                                            display: block;
+                                        }
+
+                                        .product-wishlist {
+                                            display: none;
+                                        }
+                                    }
+
+                                }
+
+                                p.tag-img {
+                                    .product-quickview-hover {
+                                        display: none;
+                                    }
+
+                                    .product-quickview {
+                                        display: block;
+                                    }
+
+                                    &:hover {
+                                        .product-quickview-hover {
+                                            display: block;
+                                        }
+
+                                        .product-quickview {
+                                            display: none;
+                                        }
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (min-width:1800px) {
+
+
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 196px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+
+@media (min-width:1700px) and (max-width:1799px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 178px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1660px) and (max-width:1699px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 244px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1600px) and (max-width:1659px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 240px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1550px) and (max-width:1599px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 228px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1536px) and (max-width:1549px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 225px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1499px) and (max-width:1535px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 218px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1449px) and (max-width:1498px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 214px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1399px) and (max-width:1448px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 205px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1380px) and (max-width:1398px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 190px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1360px) and (max-width:1379px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 187px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1330px) and (max-width:1359px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 184px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1299px) and (max-width:1329px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 178px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1280px) and (max-width:1298px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 175px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1249px) and (max-width:1280px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 175px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1220px) and (max-width:1248px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 168px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) and (max-width:1219px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 165px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1160px) and (max-width:1199px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 205px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1140px) and (max-width:1159px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 197px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1099px) and (max-width:1139px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 187px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1049px) and (max-width:1098px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 175px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1020px) and (max-width:1048px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 160px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:993px) and (max-width:1019px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 153px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 216px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:960px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 205px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:920px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 196px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:899px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 191px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:860px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 184px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:840px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 179px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:820px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 174px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 167px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:780px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 162px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:769px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 162px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 218px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:720px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 203px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:680px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 191px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:680px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 191px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:650px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 181px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:639px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-info-section {
+                            .product-price-text {
+                                font-size: 12px !important;
+                            }
+
+                            .special-price {
+                                font-size: 12px !important;
+                            }
+
+                            .specialprice-tag {
+                                font-size: 12px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:630px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 181px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:610px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 165px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:599px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 165px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:567px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 241px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:495px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 210px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:480px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 200px;
+                            }
+                        }
+
+                        .product-info-section {
+                            .product-price-text {
+                                font-size: 12px !important;
+                            }
+
+                            .special-price {
+                                font-size: 12px !important;
+                            }
+
+                            .specialprice-tag {
+                                font-size: 12px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 185px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:440px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 170px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 170px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 160px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:390px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 160px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:380px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 152px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:365px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 142px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:350px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 137px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:340px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 294px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .related-product-sec {
+        .trendingnow-section {
+            .product-grid-section {
+                .product-grid-list {
+                    .product-image-info-grid {
+                        .product-image-grid {
+                            .image-link-section {
+                                height: 275px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .related-product-sec .trendingnow-section .product-grid-section .product-grid-list .product-image-info-grid .product-image-grid .hover-tag-section {
+        display: block;
+
+        .product-wishlist-hover,
+        .product-quickview-hover {
+            display: none;
+        }
+    }
+}

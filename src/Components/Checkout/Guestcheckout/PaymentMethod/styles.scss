@@ -1,0 +1,589 @@
+.payment-method-table-section {
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    padding: 15px 20px;
+
+    .payment-method-section-title {
+        padding-bottom: 15px;
+        padding-top: 0px;
+
+        .payment-title {
+            color: #9B3C0B;
+            text-transform: capitalize;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    .address-section-form.fullwidth.checkbox-section {
+        align-items: start;
+        gap: 15px;
+
+        .MuiFormGroup-root {
+            .MuiFormControlLabel-root {
+                margin-left: 0;
+                gap: 6px;
+
+                .MuiButtonBase-root {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    color: transparent;
+                    border: 1px solid #898D94;
+                    border-radius: 0;
+                    width: 16px;
+                    height: 16px;
+                    padding-left: 7px;
+                    padding-right: 7px;
+
+
+                    .MuiSvgIcon-root {
+                        font-size: 20px;
+                    }
+
+                    &.Mui-checked {
+                        color: #298CBD;
+                        border: 0;
+                    }
+                }
+
+                .MuiTypography-root {
+                    color: #7B7B7B;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .update-billing-address-section {
+            width: 100%;
+            gap: 15px;
+
+            .form-select {
+                .select-dropdown {
+                    .custom-dropdown {
+                        border: 1px solid #EBEBEB;
+                        border-radius: 22px;
+
+                        .dropdown-btn {
+                            padding: 13px 30px 13px 10px;
+
+                            .labelname {
+                                font-size: 14px;
+                            }
+
+                            .drop-icon {
+                                top: 10px;
+                            }
+                        }
+
+                        ::-webkit-scrollbar {
+                            width: 4px;
+                            height: 4px;
+                        }
+
+                        ::-webkit-scrollbar-track {
+                            background: #EBEBEB;
+                            border-radius: 10px;
+                        }
+
+                        ::-webkit-scrollbar-thumb {
+                            background: #2B2525;
+                            border-radius: 1px;
+                            opacity: 0.58;
+                        }
+
+                        .dropdown-content {
+                            height: auto;
+                            max-height: 200px;
+                            overflow-y: auto;
+                            box-shadow: 0px 3px 6px #0000000D;
+                            border: 1px solid #EBEBEB;
+                            border-radius: 8px;
+
+                            .dropdown-item {
+                                height: 100%;
+                                color: #2B2525;
+                                font-weight: 400;
+                                font-size: 14px;
+
+                                &:hover {
+                                    background-color: #F4F4F4;
+                                    color: #2B2525;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .payment-billing-address {
+                width: 100%;
+                float: right;
+                flex-direction: row;
+                justify-content: end;
+                align-items: center;
+                gap: 15px;
+
+                .cancel-btn-section {
+                    a {
+                        color: #9B3C0B;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-decoration: none;
+                    }
+                }
+
+                .btn_block {}
+            }
+
+            .billing-address-form-block-section {
+                position: relative;
+
+                .address-section-form {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: space-between;
+                    flex-direction: initial !important;
+                    margin-bottom: 10px;
+                    margin-top: 0px;
+                    position: relative;
+
+                    &:first-child {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
+
+                    &.phone-section {
+                        margin-bottom: 20px;
+                    }
+
+                    .input-block-section {
+                        width: 48%;
+
+
+                        // purposely commented
+                        .field-error {
+                            margin-bottom: -10px !important;
+                            color: #bf1e11 !important;
+                            position: initial;
+                        }
+
+                        .required {
+                            margin-bottom: 0px !important;
+                        }
+
+                        .required-field {
+                            margin-bottom: 15px !important;
+                        }
+
+                        .MuiTypography-root {
+                            color: #3E484A;
+                            font-weight: 400;
+                            font-size: 14px;
+                            margin-bottom: 7px;
+
+                            span.MuiTypography-root {
+                                color: #7F0E05;
+                                margin-left: 5px;
+                            }
+                        }
+                        .common_input_block_section{
+                            &.address-section-block{
+                                .input-text{
+                                    margin-bottom: 7px !important;
+                                }
+                            }
+                            .address1-error{
+                                margin-bottom: 0 !important;
+                            }
+                        }
+
+                        .common_input_block_section.phone-number-section {
+                            .MuiFormControl-root {
+                                margin-bottom: 0 !important;
+
+                                .MuiInputBase-root {
+                                    input {
+                                        padding-left: 0;
+                                    }
+                                }
+                            }
+                        }
+
+                        .MuiFormControl-root {
+                            width: 100%;
+
+
+
+                            .MuiInputAdornment-root {
+                                .MuiTypography-root {
+                                    border-right: 1px solid #00000033;
+                                    padding-right: 7px;
+                                    color: #B5B3B3;
+                                    font-weight: 500;
+                                    margin-bottom: 0;
+                                }
+                            }
+
+                            input {
+                                max-height: 45px;
+                                height: 100%;
+                                padding-right: 20px !important;
+                            }
+                            .MuiAutocomplete-endAdornment{
+                                top: calc(50% - 10px);
+                                button{
+                                    &:last-child{
+                                        background-image: url("../../../../Assets/Cart/dropdown-arrow.svg");
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        background-size: 70%;
+                                        svg{
+                                            visibility: hidden;
+                                        }
+                                    }
+                                    &:first-child{
+                                        display: none;
+                                    }
+                                }
+                            }
+
+
+                            .form-select.select-options-box {
+                                .select-dropdown {
+                                    .custom-dropdown {
+                                        border: 1px solid #EBEBEB;
+                                        border-radius: 22px;
+
+                                        .dropdown-btn {
+                                            padding: 12px 30px 12px 10px;
+
+                                            .labelname {
+                                                font-size: 14px;
+                                                margin-bottom: 0;
+                                            }
+
+                                            .drop-icon {
+                                                top: 10px;
+                                                margin-bottom: 0;
+                                            }
+                                        }
+
+                                        .dropdown-content {
+                                            height: max-content;
+                                            box-shadow: 0px 3px 6px #0000000D;
+                                            border: 1px solid #EBEBEB;
+                                            border-radius: 8px;
+
+                                            .dropdown-item {
+                                                height: 32px;
+                                                color: #2B2525;
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .input-block-section.select {
+                        .MuiAutocomplete-root {
+                            .MuiFormControl-root {
+                                .MuiInputBase-root {
+                                    padding: 0px !important;
+                                    input {
+                                        padding: 11px 10px 10px 10px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .address-section-form.fullwidth {
+                    flex-direction: column !important;
+
+                    .input-block-section {
+                        width: 100%;
+
+                        .MuiFormControl-root {
+                            width: 100%;
+                            margin-left: 0;
+                            margin-top: 0;
+                            margin-right: 0;
+                            margin-bottom: 15px !important;
+
+                            &:last-child {
+                                margin-bottom: 0 !important;
+                            }
+
+                            .secondary-street {
+                                margin-bottom: 0 !important;
+                            }
+                        }
+
+                    }
+                }
+
+
+            }
+
+            .address-section-form.update-address-section {
+                width: 100%;
+
+                .input-block-section {
+                    width: 100%;
+
+                    .MuiFormControl-root {
+                        width: 100%;
+
+                        .form-select {
+                            .select-dropdown {
+                                .custom-dropdown {
+                                    .dropdown-content {
+                                        .dropdown-item {
+                                            &:hover {
+                                                background-color: #9B3C0B;
+                                                color: #fff;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .MuiFormGroup-root {
+                .MuiFormControlLabel-root {
+                    .MuiButtonBase-root {
+                        padding-top: 0;
+                        padding-bottom: 0;
+
+                        .MuiSvgIcon-root {
+                            font-size: 20px;
+                        }
+
+                        &.Mui-checked {
+                            color: #298CBD;
+                        }
+                    }
+
+                    .MuiTypography-root {
+                        color: #7B7B7B;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .payment-billing-address {
+            width: 100%;
+            float: right;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            gap: 15px;
+
+            .cancel-btn-section button {
+                color: #9B3C0B;
+                font-size: 14px;
+                font-weight: 400;
+                text-decoration: none;
+                text-transform: capitalize;
+
+                &:hover {
+                    background-color: unset;
+                }
+            }
+        }
+        .billing_address {
+            .info-address {
+                gap: 7px;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 15px;
+
+                p {
+                    color: #2B2525;
+                    font-size: 14px;
+                    font-weight: 400;
+
+                    a {
+                        color: #2B2525;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .edit {
+                small {
+                    color: #9B3C0B;
+                    font-size: 14px;
+                    font-weight: 400;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+    // payment method section
+    .payment-method-list {
+        width: 100%;
+
+
+        .payment-method-block-grid {
+
+            .input-block {
+                .MuiFormControl-root {
+                    width: 100%;
+
+                    .MuiFormGroup-root {
+                        .MuiFormControlLabel-root {
+                            padding: 10px 8px;
+                            margin: 0;
+                            border-bottom: 1px solid #00000033;
+
+                            &:last-child {
+                                border: 0;
+                            }
+
+                            .MuiRadio-root {
+                                .MuiSvgIcon-root {
+                                    font-size: 20px;
+                                }
+                            }
+
+                            .MuiTypography-root {
+                                color: #222222;
+                                font-weight: 400;
+                                text-transform: capitalize;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    .radio-section-group {
+                        display: flex;
+                        justify-content: start;
+                        flex-direction: initial;
+                        border-bottom: 1px solid #00000033;
+                        align-items: center;
+
+                        &:last-child {
+                            border: 0;
+                        }
+
+                        .card-info {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: initial;
+
+                            img {
+                                margin-right: 10px;
+                                height: 24px;
+
+                            }
+                        }
+
+                        .MuiFormControlLabel-root {
+                            padding: 0px;
+                            margin: 0;
+
+                            .MuiButtonBase-root {
+                                padding-left: 0;
+
+                                &.Mui-checked {
+                                    color: #298CBD;
+                                }
+                            }
+
+                            .MuiRadio-root {
+                                .MuiSvgIcon-root {
+                                    font-size: 20px;
+                                }
+                            }
+
+                            .MuiTypography-root {
+                                color: #222222;
+                                font-weight: 400;
+                                text-transform: capitalize;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .address-section-form.payment-info-form.halfwidth {
+            .input-block {
+                width: 49%;
+            }
+
+            .input-block.card-details {
+                padding-right: 0;
+                padding-left: 20px;
+
+                &:last-child {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+        }
+
+        .payment-button-section {
+            margin-top: 20px;
+
+            button {
+                width: 100% !important;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media(max-width:639px) {
+    .payment-method-table-section {
+        padding: 12px 15px;
+
+        .address-section-form.fullwidth.checkbox-section {
+            .update-billing-address-section {
+                .billing-address-form-block-section {
+                    .address-section-form {
+                        flex-direction: column !important;
+                        gap: 15px;
+
+                        .input-block-section {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1050px) and (max-width:1365px) {
+
+    .checkout_container_section {
+        .checkout_container {
+            .checkout_container_grid {
+                .shipping-payment-section {
+                    .payment-method-table-section {
+                        padding: 12px 15px;
+                    }
+                }
+            }
+        }
+    }
+}

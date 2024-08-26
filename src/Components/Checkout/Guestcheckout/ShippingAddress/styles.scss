@@ -1,0 +1,649 @@
+.shipping-address-block {
+    padding: 15px 20px;
+
+    .shipping-address-section-form {
+        .shipping-title {
+            color: #9B3C0B;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+
+    .shipping-address-form-block-section {
+        position: relative;
+        .address-section-form {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: initial !important;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            position: relative;
+
+            &:first-child {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .input-block-section {
+                width: 48%;
+                .field-error {
+                    margin-bottom: -10px !important;
+                    color: #bf1e11 !important;
+                    position: initial;
+                }
+
+                .required {
+                    margin-bottom: 0px !important;
+                }
+
+                .required-field {
+                    margin-bottom: 15px !important;
+                }
+
+                .MuiTypography-root {
+                    color: #3E484A;
+                    font-weight: 400;
+                    font-size: 14px;
+                    margin-bottom: 7px;
+
+                    span.MuiTypography-root {
+                        color: #7F0E05;
+                        margin-left: 5px;
+                    }
+                }
+
+                .secondary-street {
+                    margin-bottom: 0 !important;
+                }
+
+                .common_input_block_section {
+                    &.address-section-block {
+                        .input-text {
+                            margin-bottom: 7px !important;
+                        }
+                    }
+
+                    .address1-error {
+                        margin-bottom: 0 !important;
+                    }
+                }
+
+                .common_input_block_section.phone-number-section {
+                    .MuiFormControl-root {
+                        margin-bottom: 0 !important;
+
+                        .MuiInputBase-root {
+                            input {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+
+                .MuiFormControl-root {
+                    width: 100%;
+
+
+
+                    .MuiInputAdornment-root {
+                        .MuiTypography-root {
+                            border-right: 1px solid #00000033;
+                            padding-right: 7px;
+                            color: #B5B3B3;
+                            font-weight: 500;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    input {
+                        max-height: 45px;
+                        height: 100%;
+                        padding-right: 20px !important;
+                    }
+
+                    .MuiAutocomplete-endAdornment {
+                        top: calc(50% - 10px);
+
+                        button {
+                            &:last-child {
+                                background-image: url("../../../../Assets/Cart/dropdown-arrow.svg");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: 70%;
+
+                                svg {
+                                    visibility: hidden;
+                                }
+                            }
+
+                            &:first-child {
+                                display: none;
+                            }
+                        }
+                    }
+
+
+                    .form-select.select-options-box {
+                        .select-dropdown {
+                            .custom-dropdown {
+                                border: 1px solid #EBEBEB;
+                                border-radius: 22px;
+
+                                .dropdown-btn {
+                                    padding: 12px 30px 12px 10px;
+
+                                    .labelname {
+                                        font-size: 14px;
+                                        margin-bottom: 0;
+                                    }
+
+                                    .drop-icon {
+                                        top: 10px;
+                                        margin-bottom: 0;
+                                    }
+                                }
+
+                                .dropdown-content {
+                                    height: max-content;
+                                    box-shadow: 0px 3px 6px #0000000D;
+                                    border: 1px solid #EBEBEB;
+                                    border-radius: 8px;
+
+                                    .dropdown-item {
+                                        height: 32px;
+                                        color: #2B2525;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .input-block-section.select {
+                .MuiAutocomplete-root {
+                    .MuiFormControl-root {
+                        .MuiInputBase-root {
+                            padding: 0px !important;
+
+                            input {
+                                padding: 11px 10px 10px 10px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .address-section-form.fullwidth {
+        flex-direction: column !important;
+
+        .input-block-section {
+            width: 100%;
+
+            .MuiFormControl-root {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 0;
+                margin-right: 0;
+                margin-bottom: 15px !important;
+
+
+                &:last-child {
+                    margin-bottom: 0 !important;
+                }
+            }
+
+        }
+    }
+
+    .shipping-address-table-content-section {
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: wrap;
+        row-gap: 20px;
+
+        .shipping-address-table-list {
+            width: 100%;
+
+            .shipping-address-table-info {
+                &.active {
+                    border: 1px solid #9B3C0B;
+                }
+
+                border: 1px solid #EBEBEB;
+                padding: 12px 15px;
+
+                .city-code {
+                    flex-direction: row;
+
+                    .city {
+
+                        width: auto;
+                    }
+
+                }
+
+                .phone-no {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 6px;
+                }
+
+                span {
+                    width: 100%;
+                    display: grid;
+                    color: #403F3F;
+                    font-weight: 400;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+
+                .edit-address {
+                    color: #767F80;
+                    font-weight: 400;
+                    cursor: pointer;
+                    display: none;
+                }
+            }
+
+            .shipping-address-table-info.active {
+                position: relative;
+                border: 1px solid #B98457;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+
+
+
+    /* New address popup section */
+    .new-shipping-address-form-block-section {
+        position: relative;
+        width: 100%;
+
+        .address-section-form {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: initial !important;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            position: relative;
+
+            &:first-child {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .input-block-section {
+                width: 48%;
+
+                .MuiTypography-root {
+                    color: #3E484A;
+                    font-weight: 400;
+                    font-size: 14px;
+                    margin-bottom: 7px;
+
+                    span.MuiTypography-root {
+                        color: #7F0E05;
+                        margin-left: 5px;
+                    }
+                }
+
+                .MuiFormControl-root {
+                    width: 100%;
+
+                    .MuiInputAdornment-root {
+                        .MuiTypography-root {
+                            border-right: 1px solid #00000033;
+                            padding-right: 7px;
+                            color: #B5B3B3;
+                            font-weight: 500;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    input {
+                        max-height: 45px;
+                        height: 100%;
+                        padding-right: 36px !important;
+                    }
+
+
+                    .form-select.select-options-box {
+                        .select-dropdown {
+                            .custom-dropdown {
+                                border: 1px solid #EBEBEB;
+                                border-radius: 22px;
+
+                                .dropdown-btn {
+                                    padding: 12px 30px 12px 10px;
+
+                                    .labelname {
+                                        font-size: 14px;
+                                        margin-bottom: 0;
+                                    }
+
+                                    .drop-icon {
+                                        top: 10px;
+                                        margin-bottom: 0;
+                                    }
+                                }
+
+                                .dropdown-content {
+                                    height: max-content;
+                                    box-shadow: 0px 3px 6px #0000000D;
+                                    border: 1px solid #EBEBEB;
+                                    border-radius: 8px;
+
+                                    .dropdown-item {
+                                        height: 32px;
+                                        color: #2B2525;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.phone-number-section {
+                        .MuiInputBase-root {
+                            input.MuiInputBase-input {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .address-section-form.fullwidth {
+            flex-direction: column !important;
+
+            .input-block-section {
+                width: 100%;
+
+                .MuiFormControl-root {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 0;
+                    margin-right: 0;
+                    margin-bottom: 15px !important;
+
+
+                    &:last-child {
+                        margin-bottom: 0 !important;
+                    }
+                }
+
+            }
+        }
+
+
+
+    }
+
+    .address-section-form.fullwidth.checkbox-section {
+        align-items: start;
+        margin-bottom: 0;
+
+        .MuiFormGroup-root {
+            .MuiFormControlLabel-root {
+                .MuiButtonBase-root {
+                    .MuiSvgIcon-root {
+                        font-size: 20px;
+                    }
+
+                    .Mui-checked {
+                        color: #298CBD;
+                    }
+                }
+
+                .MuiTypography-root {
+                    color: #2B2525;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
+
+// custom modal popup design
+
+.custom-model.new-address-popup-model {
+
+    .model-container.newaddress-container {
+        width: 30%;
+        padding: 0;
+
+        ::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #EBEBEB;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #2B2525;
+            border-radius: 1px;
+            opacity: 0.58;
+        }
+
+        .address-popup-section {
+            overflow: auto;
+            max-height: 86vh;
+            width: 100%;
+            padding: 34px 20px 20px 20px;
+            margin-bottom: 15px;
+        }
+
+        .close-section {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            cursor: pointer;
+            justify-content: end;
+            z-index: 99;
+
+            .close-icon {
+                text-align: right;
+            }
+        }
+
+        .header-title-section {
+            color: #9B3C0B;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .add-address-section-block {
+            max-height: 80vh;
+            width: 100%;
+        }
+
+        .popup-section {
+            width: 100%;
+        }
+    }
+}
+
+@media(min-width:1536px) {
+    .custom-model.new-address-popup-model {
+        .model-container.newaddress-container {
+            width: 40%;
+
+            .close-btn {
+                height: 23px;
+
+                svg {
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+
+            .header-title-section {
+                color: #9B3C0B;
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width:1555px) {
+    .custom-model.new-address-popup-model {
+        .model-container.newaddress-container {
+            width: 50%;
+        }
+    }
+}
+
+
+@media(max-width:1024px) {
+    .custom-model.new-address-popup-model {
+        .model-container.newaddress-container {
+            width: 60%;
+
+            .btn-section {
+                flex-direction: column;
+                gap: 15px;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .shipping-address-block {
+        .shipping-address-table-content-section {
+            .shipping-address-table-list {
+                .shipping-address-table-info {
+                    padding: 8px 12px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:767px) {
+    .custom-model.new-address-popup-model {
+        .model-container.newaddress-container {
+            width: 60%;
+
+            .btn-section {
+                flex-direction: column;
+                gap: 15px;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:639px) {
+    .custom-model.new-address-popup-model {
+        .model-container.newaddress-container {
+            width: 70%;
+
+            .close-section {
+                position: absolute;
+                top: -20px;
+                right: 0;
+                cursor: pointer;
+            }
+
+
+            .btn-section {
+                flex-direction: column;
+                gap: 15px;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .shipping-address-block {
+        .shipping-address-form-block-section {
+            .address-section-form {
+                flex-direction: column !important;
+                gap: 15px;
+
+                .input-block-section {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .shipping-address-block {
+        .new-shipping-address-form-block-section {
+            .address-section-form {
+                flex-direction: column !important;
+                gap: 15px;
+
+                .input-block-section {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width:480px) {
+    .custom-model.new-address-popup-model {
+        .model-container.newaddress-container {
+            width: 90%;
+
+            .btn-section {
+                flex-direction: column;
+                gap: 15px;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1049px) {
+    .shipping-address-block .shipping-address-section-form .shipping-title {
+        border-bottom: 1px solid #EBEBEB;
+        padding-bottom: 12px;
+    }
+}

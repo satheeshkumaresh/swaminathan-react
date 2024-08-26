@@ -1,0 +1,405 @@
+.my-order {
+    .main_block {
+        padding: 10px 20px;
+        color: #2B2525;
+        min-height: 297px;
+        border-radius: 8px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid var(--unnamed-color-ebebeb);
+
+        .header {
+            padding-bottom: 20px;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 15px;
+
+            .current-page-title {
+                font-weight: 600;
+                color: #2B2525;
+                font-size: 20px;
+            }
+
+            .item {
+                align-items: flex-end;
+                flex-direction: row;
+                gap: 5px;
+                font-size: 14px;
+                color: #898D94;
+                font-weight: 400;
+            }
+        }
+
+        .empty-msg {
+            font-weight: 400;
+            color: #2B2525;
+            font-size: 14px;
+        }
+
+        .order-table {
+            .MuiPaper-elevation {
+                box-shadow: none;
+
+                .MuiTable-root {
+                    border: 1px solid #EBEBEB;
+
+
+                    .MuiTableHead-root {
+                        border-top: 1px solid #EBEBEB;
+
+                        tr {
+                            th {
+                                color: #2B2525;
+                                font-weight: bold;
+                                white-space: nowrap;
+                                text-align: center;
+
+                                &:first-child {
+                                    text-align: left;
+                                }
+
+                                &:last-child {
+                                    text-align: left;
+                                    width: 20%;
+                                }
+                            }
+                        }
+                    }
+
+                    .MuiTableBody-root {
+
+                        tr {
+                            .MuiTableCell-root {
+                                display: table-cell;
+                            }
+
+                            td {
+                                text-align: center;
+                                font-weight: 400;
+                                font-size: 14px;
+
+                                &:first-child {
+                                    text-align: left;
+                                }
+
+                                &:last-child {
+                                    text-align: left;
+                                }
+
+                                .orders__cancelled {
+                                    color: #D91919;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    text-transform: capitalize;
+                                }
+
+                                .orders__pending {
+                                    color: #D9D200;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    text-transform: capitalize;
+                                }
+
+                                .orders__Completed {
+                                    color: #1C9C17;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    text-transform: capitalize;
+                                }
+
+                                div {
+
+                                    font-size: 14px;
+                                    color: #2B2525;
+                                    white-space: nowrap;
+                                }
+
+                                .action-sec {
+                                    flex-direction: row;
+                                    gap: 16px;
+
+                                    .view-order,
+                                    .recorder {
+                                        cursor: pointer;
+                                        color: #2B2525;
+
+
+                                        &:hover {
+                                            color: #9B3C0B;
+                                        }
+                                    }
+
+                                    .view-order::after {
+                                        content: "";
+                                        padding-right: 14px;
+                                        border-right: 1px solid rgba(0, 0, 0, 0.2);
+                                    }
+                                }
+
+                                &:nth-child(3) {
+                                    div {
+                                        white-space: unset;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+
+                            &:last-child {
+                                td {
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .page {
+            flex-direction: row;
+            justify-content: space-between;
+            color: #2B2525;
+            align-items: center;
+            padding-top: 20px;
+
+            .item {
+                .pagination-pages {
+                    li {
+                        a {
+                            color: #2B2525;
+                            font-size: 14px;
+                            font-weight: 600;
+                            border: 0;
+
+                            &:hover {
+                                background-color: transparent;
+                            }
+                        }
+                    }
+
+                    li.paginationActive {
+                        a {
+                            border: 1px solid #641233;
+                            background-color: #fff;
+                            color: #2B2525;
+                            font-size: 14px;
+                            font-weight: 600;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+
+                    li.previous.disabled {
+                        display: none;
+
+                        a {
+                            border: 0;
+                            width: initial;
+                            height: initial;
+                            color: #2B2525;
+                            font-size: 14px;
+                            font-weight: 400;
+
+                            &:hover {
+                                background-color: #fff;
+                            }
+                        }
+
+                    }
+
+                    li.previous {
+                        a {
+                            border: 0;
+                            width: initial;
+                            height: initial;
+                            color: #2B2525;
+                            font-size: 14px;
+                            font-weight: 400;
+
+                            &:hover {
+                                background-color: #fff;
+                            }
+                        }
+
+                    }
+
+                    li.next {
+                        a {
+                            border: 0;
+                            width: initial;
+                            height: initial;
+                            color: #2B2525;
+                            font-size: 14px;
+                            font-weight: 600;
+
+                            &:hover {
+                                background-color: #fff;
+                            }
+                        }
+
+                        &.disabled {
+                            display: none;
+                        }
+
+                    }
+                }
+            }
+
+
+
+            .show {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: #2B2525;
+
+            }
+        }
+    }
+
+    .back-button {
+        padding-top: 20px;
+        align-items: end;
+    }
+
+
+    .page-message-block {
+        margin: 0;
+    }
+}
+
+@media (max-width:899px) {
+    .my-order {
+        .main_block {
+            .order-table {
+                .MuiPaper-elevation {
+
+                    .MuiTable-root {
+                        .MuiTableHead-root {
+                            display: contents;
+
+                            tr {
+                                th {
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+
+                        .MuiTableBody-root {
+                            tr {
+                                border-bottom: none;
+                                border-top: solid 1px rgba(0, 0, 0, 0.15);
+
+                                .MuiTableCell-root {
+                                    display: table-cell;
+                                    width: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .my-order {
+        .main_block {
+            .order-table {
+                .MuiPaper-elevation {
+                    .MuiTable-root {
+                        .MuiTableHead-root {
+                            display: none !important;
+                        }
+
+                        .MuiTableBody-root {
+                            .MuiTableRow-root {
+                                border-top: solid 1px rgba(0, 0, 0, 0.15) !important;
+                                border-bottom: none;
+
+                                .MuiTableCell-root {
+                                    display: flex;
+                                    border-bottom: none;
+                                    padding: 16px 10px;
+                                    text-align: initial !important;
+
+                                    &>div {
+                                        display: block !important;
+
+                                        &:last-child {
+                                            text-align: right;
+                                        }
+
+                                        &:nth-child(1) {
+                                            font-weight: 700;
+                                        }
+                                    }
+
+                                    .action-sec {
+                                        display: flex !important;
+                                        justify-content: end;
+
+                                        .view-order,
+                                        .recorder {
+                                            font-weight: 400;
+                                            color: #9B3C0B;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .page {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        .back-button {
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .my-order .main_block {
+        padding: 10px 10px;
+    }
+}
+
+@media (min-width:1536px) {
+    .my-order {
+        .main_block {
+
+            .header {
+                .current-page-title {
+                    font-size: 26px;
+                }
+            }
+
+            .order-table {
+                .MuiPaper-elevation {
+                    .MuiTable-root {
+                        .MuiTableBody-root {
+                            tr {
+                                td {
+                                    div {
+                                        font-size: 14px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

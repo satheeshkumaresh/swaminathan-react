@@ -1,0 +1,110 @@
+.emptycart {
+    .container {
+
+        .row {
+            width: 350px;
+            margin: 3rem auto;
+            text-align: center;
+            gap: 16px;
+            margin-bottom: 5rem;
+
+            .image-section {
+                width: 215px;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            h4 {
+                color: #2B2525;
+                font-weight: 600;
+            }
+
+            p {
+                color: #2B2525;
+                font-size: 14px;
+                width: 80%;
+                margin: auto;
+            }
+
+            .button-section {
+                padding-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                button {
+                    background: #232F3E;
+                    width: 88%;
+                    color: white;
+                    padding: 8px;
+                    border-radius: 3px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .emptycart {
+        .container {
+            width: 93%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .emptycart {
+        .container {
+            .row {
+                width: 100%;
+                margin: 1.5rem auto;
+                margin-bottom: 3rem;
+                gap: 18px;
+
+                .image-section {
+                    width: 200px;
+                }
+
+                .button-section {
+                    button {
+                        padding: 10px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1536px) and (max-width:1920px) {
+    .emptycart {
+        .container {
+            .row {
+                width: 380px;
+                margin-bottom: 7rem;
+
+                .image-section {
+                    width: 220px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                .button-section {
+                    padding-top: 15px;
+
+                    button {
+                        font-size: 16px;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

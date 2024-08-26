@@ -1,0 +1,49 @@
+.mobile-header-section-bottom {
+
+
+    .menu-list-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        padding: 1em 0;
+
+        .icon-img-text {
+            align-items: center;
+            justify-content: center;
+
+            .list-text {
+                text-align: center;
+                text-decoration: none;
+
+                &.mobile-home {
+
+                    svg {
+                        path {
+                            stroke: #a8b0bb;
+                        }
+                    }
+                }
+
+                &.active {
+                    svg {
+                        path {
+                            stroke: #641233;
+                        }
+                    }
+                }
+
+                .list-text {
+                    color: #A8B0BB;
+                    font-size: 10px;
+                    font-weight: 500;
+                    text-decoration: none;
+
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.guest-signin-section {
+    .form-block {
+        .input-block {
+            margin-bottom: 16px;
+
+            .input_label {
+                color: #3E484A;
+                font-weight: 400;
+                font-size: 14px;
+                margin-bottom: 7px;
+
+                span.MuiTypography-root {
+                    color: #7F0E05;
+                    margin-left: 5px;
+                }
+            }
+
+            .form-address-form {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                position: relative;
+
+                .input-text {
+                    width: 100%;
+
+                    .MuiTypography-root {
+                        margin-bottom: 7px;
+                    }
+
+                    .MuiInputBase-root {
+                        width: 95%;
+                    }
+                }
+
+                .input-icon-section {
+                    position: relative;
+                    width: 100%;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+
+                    .MuiInputBase-root {
+                        width: 91%;
+                    }
+                }
+
+                .field-error {
+                    margin-bottom: -5px !important;
+                    color: #bf1e11 !important;
+                    position: absolute;
+                }
+
+                .required {
+                    margin-bottom: 0px !important;
+                }
+
+                .required-field {
+                    margin-bottom: 15px !important;
+                }
+
+                .question-section {
+                    position: relative;
+
+                    .tool-display {
+                        display: none;
+                    }
+
+                    &:hover {
+                        .tool-display {
+                            display: block;
+                        }
+                    }
+                }
+
+                .icon-section {
+                    position: absolute;
+                    right: 14%;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .account-after-checkout {
+            color: #898D94;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .account-with-us {
+            color: #2B2525;
+        }
+
+        .checkout-signin-btn {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .forgot-password {
+                color: #9B3C0B;
+                cursor: pointer;
+                a {
+                    color: #9B3C0B;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}
+
+@media(max-width:639px) {
+    .guest-signin-section {
+        .form-block {
+            .checkout-signin-btn {
+                flex-direction: column;
+                gap: 8px;
+
+                .button-section {
+                    width: 100%;
+
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

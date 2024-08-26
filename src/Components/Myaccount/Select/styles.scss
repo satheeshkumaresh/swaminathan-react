@@ -1,0 +1,88 @@
+.form-select.myaccount {
+    .select-dropdown {
+
+        .custom-dropdown {
+            border: 1px solid #EBEBEB;
+            border-radius: 4px;
+            background-color: #fff;
+            width: 100%;
+
+            ::-webkit-scrollbar {
+                width: 4px;
+                height: 4px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #EBEBEB;
+                border-radius: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #2B2525;
+                border-radius: 1px;
+                opacity: 0.58;
+            }
+
+            .dropdown-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0px 30px 0px 10px;
+                min-height: 35px;
+                position: relative;
+
+                .drop-icon {
+                    position: absolute;
+                    top: 8px;
+                    right: 8px;
+                    transform: translateY(50%);
+                    width: 10px;
+                    height: 10px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .MuiTypography-root {
+                    &.labelname {
+                        color: #2B2525;
+                        text-transform: capitalize;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .dropdown-content {
+                box-shadow: 3px 3px 8px #0000000F;
+                border: 1px solid #EBEBEB;
+                background-color: #fff;
+                height: auto;
+
+                .MuiTypography-root {
+                    color: #2B2525;
+                    font-size: 14px;
+                    font-weight: 400;
+
+                    &:hover {
+                        background-color: #F7F7F7;
+                    }
+                }
+            }
+
+        }
+
+      
+    }
+}
+
+@media (max-width:480px) {
+    .form-select.myaccount {
+        .select-dropdown {
+            .custom-dropdown {
+                .dropdown-btn {
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}

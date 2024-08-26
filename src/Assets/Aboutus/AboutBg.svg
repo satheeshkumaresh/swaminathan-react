@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1576.87" viewBox="0 0 1920 1576.87">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#002e4d"/>
+      <stop offset="0.11" stop-color="#0e2a49"/>
+      <stop offset="1" stop-color="#7c0c2d"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2985" data-name="Group 2985" transform="translate(13965 -3547)">
+    <g id="_19346849_SL-072120-32630-18_Converted_" data-name="19346849_SL-072120-32630-18 [Converted]" transform="translate(-13965 3547)">
+      <g id="Layer_1" data-name="Layer 1">
+        <g id="Group_2682" data-name="Group 2682">
+          <rect id="Rectangle_2159" data-name="Rectangle 2159" width="1920" height="1576.87" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

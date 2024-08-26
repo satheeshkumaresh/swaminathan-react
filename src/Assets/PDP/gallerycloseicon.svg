@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98" height="98" viewBox="0 0 98 98">
+  <defs>
+    <filter id="Rectangle_1829" x="0" y="0" width="98" height="98" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2239" data-name="Group 2239" transform="translate(-1339.074 -247.217)">
+    <g transform="matrix(1, 0, 0, 1, 1339.07, 247.22)" filter="url(#Rectangle_1829)">
+      <rect id="Rectangle_1829-2" data-name="Rectangle 1829" width="80" height="80" rx="40" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="Icon_ionic-ios-close" data-name="Icon ionic-ios-close" d="M27.913,24.728l9.6-9.6a2.25,2.25,0,0,0-3.182-3.182l-9.6,9.6-9.6-9.6a2.25,2.25,0,1,0-3.182,3.182l9.6,9.6-9.6,9.6a2.25,2.25,0,0,0,3.182,3.182l9.6-9.6,9.6,9.6a2.25,2.25,0,0,0,3.182-3.182Z" transform="translate(1363.586 268.25)" fill="#767f80"/>
+  </g>
+</svg>

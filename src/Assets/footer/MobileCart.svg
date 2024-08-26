@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_3193" data-name="Group 3193" transform="translate(0.205 0.206)">
+    <rect id="Rectangle_2057" data-name="Rectangle 2057" width="24" height="24" transform="translate(-0.205 -0.206)" fill="none"/>
+    <g id="Group_87" data-name="Group 87" transform="translate(4.687 4.687)">
+      <g id="Path_36" data-name="Path 36" transform="translate(0 3.568)" fill="none">
+        <path d="M1.036,0h12.7l1.1,10.788H0Z" stroke="none"/>
+        <path d="M 1.944333076477051 0.999995231628418 L 1.100600242614746 9.788115501403809 L 13.72691535949707 9.788115501403809 L 12.83410167694092 0.999995231628418 L 1.944333076477051 0.999995231628418 M 1.035746574401855 -4.76837158203125e-06 L 13.73765659332275 -4.76837158203125e-06 L 14.83365631103516 10.78811550140381 L -3.814697265625e-06 10.78811550140381 L 1.035746574401855 -4.76837158203125e-06 Z" stroke="none" fill="#a8b0bb"/>
+      </g>
+      <path id="Path_37" data-name="Path 37" d="M12852.644,4653.985a4.114,4.114,0,0,1,1.033-2.414,3.659,3.659,0,0,1,2.766-1.154,3.7,3.7,0,0,1,2.949,1.273,4.45,4.45,0,0,1,.855,2.294" transform="translate(-12849.057 -4650.417)" fill="none" stroke="#a8b0bb" stroke-linecap="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
