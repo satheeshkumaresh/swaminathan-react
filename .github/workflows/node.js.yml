@@ -22,9 +22,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     
-    # Install dependencies with legacy-peer-deps flag to bypass conflicts
+    # Install dependencies with legacy-peer-deps to avoid conflicts
     - name: Install dependencies
       run: npm install --legacy-peer-deps
+    
+    # Update browserslist database
+    - name: Update Browserslist DB
+      run: npx update-browserslist-db@latest --force
     
     # Build the project
     - name: Build project
