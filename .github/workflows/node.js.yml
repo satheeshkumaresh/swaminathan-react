@@ -28,6 +28,9 @@ jobs:
   # Install dependencies using caniuse-lite
     - name: Install caniuse-lite
       run: npm install caniuse-lite --force
+  # Install dependencies using
+    - name:  install @mui/base
+      run: npm install @mui/base
       
     # Update browserslist database
     - name: Update Browserslist DB
