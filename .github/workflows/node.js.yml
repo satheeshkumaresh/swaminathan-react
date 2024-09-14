@@ -24,6 +24,9 @@ jobs:
     # Install dependencies using legacy-peer-deps
     - name: Install dependencies
       run: npm install --legacy-peer-deps
+      
+  # Install dependencies using caniuse-lite
+    - name: Install caniuse-lite
       run: npm install caniuse-lite --force
       
     # Update browserslist database
