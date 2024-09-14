@@ -12,7 +12,6 @@ jobs:
     strategy:
       matrix:
         node-version: [16.x, 17.x, 18.x, 20.x, 22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v4
@@ -22,7 +21,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     
-    # Install dependencies with legacy-peer-deps to avoid conflicts
+    # Install dependencies using legacy-peer-deps
     - name: Install dependencies
       run: npm install --legacy-peer-deps
     
