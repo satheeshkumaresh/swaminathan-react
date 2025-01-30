@@ -4,30 +4,38 @@ pipeline {
     }
 
     environment {
-        DEPLOY_PATH = "/var/www/html/demoproject"
+        DEPLOY_PATH = "/var/www/html/New-React"
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', credentialsId: 'Satheeshkumaresh_github_access', url: 'https://github.com/satheeshkumaresh/mydemo_project.git'
+                git branch: 'development', credentialsId: 'Satheeshkumaresh_github_access', url: 'https://github.com/satheeshkumaresh/swaminathan-react.git'
             }
         }
 
-        stage('Build') {
+        stage('Deployment started') {
             steps {
-                sh 'echo "Building the application..."'
-                // Add your build commands here (e.g., npm install, mvn package)
+                sh 'echo "starting the application..."'
+               
             }
         }
 
-        stage('Deploy') {
+        stage('code pull') {
             steps {
                 sh """
                     cd ${DEPLOY_PATH}
-                    git pull origin main
+                    git pull origin development
                     git branch
                     """
+            }
+        }
+        stage('Build') {
+            steps {
+                sh  """
+                    sudo npm install
+                    sudo npm build
+                    """                
             }
         }
     }
