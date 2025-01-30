@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'jenkins_server'
+        label 'jenkins_server'  // Run pipeline on the configured Jenkins slave
     }
 
     environment {
@@ -23,17 +23,12 @@ pipeline {
         stage('Code Pull') {
             steps {
                 dir("${DEPLOY_PATH}") {
-                    withCredentials([usernamePassword(credentialsId: 'Satheeshkumaresh_github_access', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_PASS')]) {
-                        sh """
-                            git reset --hard HEAD  # Avoid merge conflicts
-                            git clean -fd          # Remove untracked files
-                            git pull https://${GIT_USER}:${GIT_PASS}@github.com/satheeshkumaresh/swaminathan-react.git master
-                            git branch
-                        """
-                    }
+                    sh """
+                        git pull origin development
+                        git branch
+                    """
                 }
             }
         }
     }
 }
-
