@@ -20,16 +20,13 @@ pipeline {
             }
         }
 
-        stage('Code Pull') {
+        stage('code pull') {
             steps {
-                dir("${DEPLOY_PATH}") {
-                    withCredentials([usernamePassword(credentialsId: 'Satheeshkumaresh_github_access', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_PASS')]) {
-                        sh """
-                            git pull https://${GIT_USER}:${GIT_PASS}@github.com/satheeshkumaresh/swaminathan-react.git development
-                            git branch
-                        """
-                    }
-                }
+                sh """
+                    cd ${DEPLOY_PATH}
+                    git pull origin master
+                    git branch
+                    """
             }
         }
 
