@@ -24,7 +24,7 @@ pipeline {
             steps {
                 dir("${DEPLOY_PATH}") {
                     sh """
-                        git pull origin development
+                        git pull origin master
                         git branch
                     """
                 }
