@@ -33,8 +33,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh  """
-                    sudo npm install
-                    sudo npm build
+                    sudo yarn install
+                    sudo yarn build
                     """                
             }
         }
