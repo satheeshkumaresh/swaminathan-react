@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'jenkins_server'  // Run pipeline on the configured Jenkins slave
+        label 'jenkins_server'
     }
 
     environment {
@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'development', credentialsId: 'Satheeshkumaresh_github_access', url: 'https://github.com/satheeshkumaresh/swaminathan-react.git'
+                git branch: 'master', credentialsId: 'Satheeshkumaresh_github_access', url: 'https://github.com/satheeshkumaresh/swaminathan-react.git'
             }
         }
 
@@ -23,10 +23,12 @@ pipeline {
         stage('Code Pull') {
             steps {
                 dir("${DEPLOY_PATH}") {
-                    sh """
-                        git pull origin development
-                        git branch
-                    """
+                    withCredentials([usernamePassword(credentialsId: 'Satheeshkumaresh_github_access', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_PASS')]) {
+                        sh """
+                            git pull https://${GIT_USER}:${GIT_PASS}@github.com/satheeshkumaresh/swaminathan-react.git development
+                            git branch
+                        """
+                    }
                 }
             }
         }
@@ -35,9 +37,9 @@ pipeline {
             steps {
                 dir("${DEPLOY_PATH}") {
                     sh """
-                        sudo yarn install
-                        sudo yarn build
-                    """                
+                        yarn install 
+                        yarn build
+                    """
                 }
             }
         }
