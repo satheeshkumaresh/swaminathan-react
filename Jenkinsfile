@@ -16,26 +16,29 @@ pipeline {
 
         stage('Deployment started') {
             steps {
-                sh 'echo "starting the application..."'
-               
+                sh 'echo "Starting the application..."'
             }
         }
 
-        stage('code pull') {
+        stage('Code Pull') {
             steps {
-                sh """
-                    cd ${DEPLOY_PATH}
-                    git pull origin development
-                    git branch
+                dir("${DEPLOY_PATH}") {
+                    sh """
+                        git pull origin development
+                        git branch
                     """
+                }
             }
         }
+
         stage('Build') {
             steps {
-                sh  """
-                    sudo yarn install
-                    sudo yarn build
+                dir("${DEPLOY_PATH}") {
+                    sh """
+                        sudo yarn install
+                        sudo yarn build
                     """                
+                }
             }
         }
     }
