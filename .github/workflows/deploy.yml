@@ -21,7 +21,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: 22
         script: |
-          cd /var/www/html/app/
-          git pull origin main
+          cd /var/www/html/swaminathan-react/
+          git pull origin jenkins
           # Add any commands like build, restart services etc.
           sudo systemctl restart nginx
